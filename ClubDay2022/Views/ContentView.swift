@@ -18,13 +18,15 @@ struct ContentView: View {
                     Group {
                         Text("CL4SH ROY4L3")
                             .foregroundColor(.white)
-                            .font(.custom("Galpon-Black", size: 56))
-                        
-                        Text("SOUNDBOARD")
-                            .foregroundColor(Color(hex: 0xF7AD18))
-                            .font(.custom("Galpon-Black", size: 56))
-                            .italic()
+                            
+                        Button {
+                            model.currentColumnIndex = nil
+                        } label: {
+                            Text("SOUNDBOARD")
+                                .foregroundColor(Color(hex: 0xF7AD18))
+                        }
                     }
+                    .font(.custom("Galpon-Black", size: 56))
                     .padding(.top, 2)
                     .padding(.bottom, 4)
                     

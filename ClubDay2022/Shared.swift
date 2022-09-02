@@ -14,7 +14,7 @@ enum Shared {
     static var players: [AVAudioPlayer] = []
 
     static let emotes: [Emote] = [
-        .init(name: "Cake_Giant", audioFileName: "Heheheha sound affect"),
+        .init(name: "Cake_Giant", audioFileName: "Angry Barbarian Emote"),
         .init(name: "Error_Mini_PEKKA", audioFileName: "clash Royale sad emote"),
         .init(name: "Error_Mini_PEKKA", audioFileName: "clash Royale sad emote"),
         .init(name: "Error_Mini_PEKKA", audioFileName: "clash Royale sad emote"),

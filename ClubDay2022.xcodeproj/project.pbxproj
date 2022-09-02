@@ -8,14 +8,93 @@
 
 /* Begin PBXBuildFile section */
 		3C0C89DC28C1B9A900FEE351 /* Galpon-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89D928C1B94300FEE351 /* Galpon-Black.otf */; };
+		3C0C8A2F28C1C10D00FEE351 /* Angry Goblin Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89DD28C1C10A00FEE351 /* Angry Goblin Emote.m4a */; };
+		3C0C8A3028C1C10D00FEE351 /* Knight Phew Exclusive Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89DE28C1C10A00FEE351 /* Knight Phew Exclusive Emote.m4a */; };
+		3C0C8A3128C1C10D00FEE351 /* Magic Archer Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89DF28C1C10A00FEE351 /* Magic Archer Emote.m4a */; };
+		3C0C8A3228C1C10D00FEE351 /* Electro Wizard thumbs Up Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89E028C1C10A00FEE351 /* Electro Wizard thumbs Up Emote.m4a */; };
+		3C0C8A3328C1C10D00FEE351 /* Valkyrie Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89E128C1C10A00FEE351 /* Valkyrie Emote.m4a */; };
+		3C0C8A3428C1C10D00FEE351 /* Skeleton Putting Head Back Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89E228C1C10B00FEE351 /* Skeleton Putting Head Back Emote.m4a */; };
+		3C0C8A3528C1C10D00FEE351 /* Wizard Flame Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89E328C1C10B00FEE351 /* Wizard Flame Emote.m4a */; };
+		3C0C8A3628C1C10D00FEE351 /* Goblin thumbs Up Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89E428C1C10B00FEE351 /* Goblin thumbs Up Emote.m4a */; };
+		3C0C8A3728C1C10D00FEE351 /* Goblin Tongue Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89E528C1C10B00FEE351 /* Goblin Tongue Emote.m4a */; };
+		3C0C8A3828C1C10D00FEE351 /* Ice Spirit Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89E628C1C10B00FEE351 /* Ice Spirit Emote.m4a */; };
+		3C0C8A3928C1C10D00FEE351 /* Goblin Knife Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89E728C1C10B00FEE351 /* Goblin Knife Emote.m4a */; };
+		3C0C8A3A28C1C10D00FEE351 /* Burning Goblin Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89E828C1C10B00FEE351 /* Burning Goblin Emote.m4a */; };
+		3C0C8A3B28C1C10D00FEE351 /* Giant Eating Meat Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89E928C1C10B00FEE351 /* Giant Eating Meat Emote.m4a */; };
+		3C0C8A3C28C1C10D00FEE351 /* Barbarian Poking Nose Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89EA28C1C10B00FEE351 /* Barbarian Poking Nose Emote.m4a */; };
+		3C0C8A3D28C1C10D00FEE351 /* Crying King Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89EB28C1C10B00FEE351 /* Crying King Emote.m4a */; };
+		3C0C8A3E28C1C10D00FEE351 /* Baby Dragon Laughing Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89EC28C1C10B00FEE351 /* Baby Dragon Laughing Emote.m4a */; };
+		3C0C8A3F28C1C10D00FEE351 /* Ice Wizard Christmas Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89ED28C1C10B00FEE351 /* Ice Wizard Christmas Emote.m4a */; };
+		3C0C8A4028C1C10D00FEE351 /* Angry Barbarian Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89EE28C1C10B00FEE351 /* Angry Barbarian Emote.m4a */; };
+		3C0C8A4128C1C10D00FEE351 /* E Wizard Getting Current Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89EF28C1C10B00FEE351 /* E Wizard Getting Current Emote.m4a */; };
+		3C0C8A4228C1C10D00FEE351 /* Goblin Victory Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89F028C1C10B00FEE351 /* Goblin Victory Emote.m4a */; };
+		3C0C8A4328C1C10D00FEE351 /* Princess Kissing Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89F128C1C10B00FEE351 /* Princess Kissing Emote.m4a */; };
+		3C0C8A4428C1C10D00FEE351 /* Skeleton Heart Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89F228C1C10B00FEE351 /* Skeleton Heart Emote.m4a */; };
+		3C0C8A4528C1C10D00FEE351 /* Goblin Finger Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89F328C1C10B00FEE351 /* Goblin Finger Emote.m4a */; };
+		3C0C8A4628C1C10D00FEE351 /* Bandit Dash Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89F428C1C10B00FEE351 /* Bandit Dash Emote.m4a */; };
+		3C0C8A4728C1C10D00FEE351 /* Ram Rider Goat Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89F528C1C10B00FEE351 /* Ram Rider Goat Emote.m4a */; };
+		3C0C8A4828C1C10D00FEE351 /* Giant thumbs Up Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89F628C1C10B00FEE351 /* Giant thumbs Up Emote.m4a */; };
+		3C0C8A4928C1C10D00FEE351 /* Yawning Princess Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89F728C1C10B00FEE351 /* Yawning Princess Emote.m4a */; };
+		3C0C8A4A28C1C10D00FEE351 /* Knight Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89F828C1C10B00FEE351 /* Knight Emote.m4a */; };
+		3C0C8A4B28C1C10D00FEE351 /* Goblin Mean Laugh Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89F928C1C10B00FEE351 /* Goblin Mean Laugh Emote.m4a */; };
+		3C0C8A4C28C1C10D00FEE351 /* Skeleton Bulb Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89FA28C1C10B00FEE351 /* Skeleton Bulb Emote.m4a */; };
+		3C0C8A4D28C1C10D00FEE351 /* King with Sign Exclusive Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89FB28C1C10B00FEE351 /* King with Sign Exclusive Emote.m4a */; };
+		3C0C8A4E28C1C10D00FEE351 /* Princess Whistling Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89FC28C1C10B00FEE351 /* Princess Whistling Emote.m4a */; };
+		3C0C8A4F28C1C10D00FEE351 /* Hog Rider Hammer Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89FD28C1C10B00FEE351 /* Hog Rider Hammer Emote.m4a */; };
+		3C0C8A5028C1C10D00FEE351 /* Wizard IDK Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89FE28C1C10B00FEE351 /* Wizard IDK Emote.m4a */; };
+		3C0C8A5128C1C10D00FEE351 /* Goblin White Flag Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89FF28C1C10B00FEE351 /* Goblin White Flag Emote.m4a */; };
+		3C0C8A5228C1C10D00FEE351 /* Angry King Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0028C1C10B00FEE351 /* Angry King Emote.m4a */; };
+		3C0C8A5328C1C10D00FEE351 /* Laughing Barbarian Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0128C1C10B00FEE351 /* Laughing Barbarian Emote.m4a */; };
+		3C0C8A5428C1C10D00FEE351 /* Goblin Not Caring Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0228C1C10B00FEE351 /* Goblin Not Caring Emote.m4a */; };
+		3C0C8A5528C1C10D00FEE351 /* Hog Rider thinking Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0328C1C10B00FEE351 /* Hog Rider thinking Emote.m4a */; };
+		3C0C8A5628C1C10D00FEE351 /* Laughing Goblin Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0428C1C10C00FEE351 /* Laughing Goblin Emote.m4a */; };
+		3C0C8A5728C1C10D00FEE351 /* Laughing King Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0528C1C10C00FEE351 /* Laughing King Emote.m4a */; };
+		3C0C8A5828C1C10D00FEE351 /* Electro Wizard Bulb Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0628C1C10C00FEE351 /* Electro Wizard Bulb Emote.m4a */; };
+		3C0C8A5928C1C10D00FEE351 /* Pig Helmet Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0728C1C10C00FEE351 /* Pig Helmet Emote.m4a */; };
+		3C0C8A5A28C1C10D00FEE351 /* Pig Eating Noodles Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0828C1C10C00FEE351 /* Pig Eating Noodles Emote.m4a */; };
+		3C0C8A5B28C1C10D00FEE351 /* Wizard Blowing Flame Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0928C1C10C00FEE351 /* Wizard Blowing Flame Emote.m4a */; };
+		3C0C8A5C28C1C10D00FEE351 /* Goblin Pretty Please Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0A28C1C10C00FEE351 /* Goblin Pretty Please Emote.m4a */; };
+		3C0C8A5D28C1C10D00FEE351 /* Hog Rider Screaming Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0B28C1C10C00FEE351 /* Hog Rider Screaming Emote.m4a */; };
+		3C0C8A5E28C1C10D00FEE351 /* Goblin Biting Nails Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0C28C1C10C00FEE351 /* Goblin Biting Nails Emote.m4a */; };
+		3C0C8A5F28C1C10D00FEE351 /* Golden Hog Rider Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0D28C1C10C00FEE351 /* Golden Hog Rider Emote.m4a */; };
+		3C0C8A6028C1C10D00FEE351 /* Bandit Screaming Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0E28C1C10C00FEE351 /* Bandit Screaming Emote.m4a */; };
+		3C0C8A6128C1C10D00FEE351 /* Musketeer Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A0F28C1C10C00FEE351 /* Musketeer Emote.m4a */; };
+		3C0C8A6228C1C10D00FEE351 /* Pig Dragon Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1028C1C10C00FEE351 /* Pig Dragon Emote.m4a */; };
+		3C0C8A6328C1C10D00FEE351 /* Goblin Kissing Trophy Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1128C1C10C00FEE351 /* Goblin Kissing Trophy Emote.m4a */; };
+		3C0C8A6428C1C10D00FEE351 /* Royal Ghost Exclusive Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1228C1C10C00FEE351 /* Royal Ghost Exclusive Emote.m4a */; };
+		3C0C8A6528C1C10D00FEE351 /* Laughing Electro Wizard Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1328C1C10C00FEE351 /* Laughing Electro Wizard Emote.m4a */; };
+		3C0C8A6628C1C10D00FEE351 /* Angry Princess Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1428C1C10C00FEE351 /* Angry Princess Emote.m4a */; };
+		3C0C8A6728C1C10D00FEE351 /* Goblin Hands on Face Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1528C1C10C00FEE351 /* Goblin Hands on Face Emote.m4a */; };
+		3C0C8A6828C1C10D00FEE351 /* Goblin Glasses Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1628C1C10C00FEE351 /* Goblin Glasses Emote.m4a */; };
+		3C0C8A6A28C1C10D00FEE351 /* Princess Victory Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1828C1C10C00FEE351 /* Princess Victory Emote.m4a */; };
+		3C0C8A6B28C1C10D00FEE351 /* Sleeping Pig Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1928C1C10C00FEE351 /* Sleeping Pig Emote.m4a */; };
+		3C0C8A6C28C1C10D00FEE351 /* Barbarian Sword Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1A28C1C10C00FEE351 /* Barbarian Sword Emote.m4a */; };
+		3C0C8A6D28C1C10D00FEE351 /* Angry Ram Rider Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1B28C1C10C00FEE351 /* Angry Ram Rider Emote.m4a */; };
+		3C0C8A6E28C1C10D00FEE351 /* Goblin Kissing Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1C28C1C10C00FEE351 /* Goblin Kissing Emote.m4a */; };
+		3C0C8A6F28C1C10D00FEE351 /* Nervous Princess Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1D28C1C10C00FEE351 /* Nervous Princess Emote.m4a */; };
+		3C0C8A7028C1C10D00FEE351 /* Goblin Bicep Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1E28C1C10C00FEE351 /* Goblin Bicep Emote.m4a */; };
+		3C0C8A7128C1C10D00FEE351 /* Pig Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A1F28C1C10C00FEE351 /* Pig Emote.m4a */; };
+		3C0C8A7228C1C10D00FEE351 /* Princess Thumbs Up Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2028C1C10C00FEE351 /* Princess Thumbs Up Emote.m4a */; };
+		3C0C8A7328C1C10D00FEE351 /* Dark Prince Arrow Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2128C1C10C00FEE351 /* Dark Prince Arrow Emote.m4a */; };
+		3C0C8A7428C1C10D00FEE351 /* Angry Giant Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2228C1C10C00FEE351 /* Angry Giant Emote.m4a */; };
+		3C0C8A7528C1C10D00FEE351 /* Hunter Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2328C1C10C00FEE351 /* Hunter Emote.m4a */; };
+		3C0C8A7628C1C10D00FEE351 /* Inferno Tower Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2428C1C10C00FEE351 /* Inferno Tower Emote.m4a */; };
+		3C0C8A7728C1C10D00FEE351 /* Minion Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2528C1C10C00FEE351 /* Minion Emote.m4a */; };
+		3C0C8A7828C1C10D00FEE351 /* Pig Screaming Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2628C1C10C00FEE351 /* Pig Screaming Emote.m4a */; };
+		3C0C8A7928C1C10D00FEE351 /* Crying Skeleton Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2728C1C10D00FEE351 /* Crying Skeleton Emote.m4a */; };
+		3C0C8A7A28C1C10D00FEE351 /* Wizard Dap Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2828C1C10D00FEE351 /* Wizard Dap Emote.m4a */; };
+		3C0C8A7B28C1C10D00FEE351 /* Hog Rider Kissing Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2928C1C10D00FEE351 /* Hog Rider Kissing Emote.m4a */; };
+		3C0C8A7C28C1C10D00FEE351 /* Mini Pekka Pan Cake Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2A28C1C10D00FEE351 /* Mini Pekka Pan Cake Emote.m4a */; };
+		3C0C8A7D28C1C10D00FEE351 /* Bomber Giving Bomb Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2B28C1C10D00FEE351 /* Bomber Giving Bomb Emote.m4a */; };
+		3C0C8A7E28C1C10D00FEE351 /* Prince Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2C28C1C10D00FEE351 /* Prince Emote.m4a */; };
+		3C0C8A7F28C1C10D00FEE351 /* Princess Arrow Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2D28C1C10D00FEE351 /* Princess Arrow Emote.m4a */; };
+		3C0C8A8028C1C10D00FEE351 /* Giant Crushing Rock Emote.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8A2E28C1C10D00FEE351 /* Giant Crushing Rock Emote.m4a */; };
 		3C30161428C19FBE0061A670 /* ClubDay2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30161328C19FBE0061A670 /* ClubDay2022App.swift */; };
 		3C30161628C19FBE0061A670 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30161528C19FBE0061A670 /* ContentView.swift */; };
 		3C30161828C19FBF0061A670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C30161728C19FBF0061A670 /* Assets.xcassets */; };
 		3C30161B28C19FBF0061A670 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C30161A28C19FBF0061A670 /* Preview Assets.xcassets */; };
 		3C30162228C1A0AC0061A670 /* Emote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30162128C1A0AB0061A670 /* Emote.swift */; };
 		3C30162428C1A0D10061A670 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30162328C1A0D10061A670 /* Shared.swift */; };
-		3C30162728C1A17F0061A670 /* clash Royale sad emote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C30162628C1A17F0061A670 /* clash Royale sad emote.mp3 */; };
-		3C30162928C1A1840061A670 /* Heheheha sound affect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C30162828C1A1840061A670 /* Heheheha sound affect.mp3 */; };
 		3C30162B28C1A1AA0061A670 /* EmotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30162A28C1A1AA0061A670 /* EmotesView.swift */; };
 		3C30162D28C1A1EC0061A670 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30162C28C1A1EC0061A670 /* Utilities.swift */; };
 		3C30162F28C1A2190061A670 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30162E28C1A2190061A670 /* ViewModel.swift */; };
@@ -29,6 +108,87 @@
 /* Begin PBXFileReference section */
 		3C0C89D928C1B94300FEE351 /* Galpon-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Galpon-Black.otf"; sourceTree = "<group>"; };
 		3C0C89DB28C1B96100FEE351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3C0C89DD28C1C10A00FEE351 /* Angry Goblin Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Angry Goblin Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89DE28C1C10A00FEE351 /* Knight Phew Exclusive Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Knight Phew Exclusive Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89DF28C1C10A00FEE351 /* Magic Archer Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Magic Archer Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89E028C1C10A00FEE351 /* Electro Wizard thumbs Up Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Electro Wizard thumbs Up Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89E128C1C10A00FEE351 /* Valkyrie Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valkyrie Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89E228C1C10B00FEE351 /* Skeleton Putting Head Back Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Skeleton Putting Head Back Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89E328C1C10B00FEE351 /* Wizard Flame Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wizard Flame Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89E428C1C10B00FEE351 /* Goblin thumbs Up Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin thumbs Up Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89E528C1C10B00FEE351 /* Goblin Tongue Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Tongue Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89E628C1C10B00FEE351 /* Ice Spirit Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ice Spirit Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89E728C1C10B00FEE351 /* Goblin Knife Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Knife Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89E828C1C10B00FEE351 /* Burning Goblin Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Burning Goblin Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89E928C1C10B00FEE351 /* Giant Eating Meat Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Giant Eating Meat Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89EA28C1C10B00FEE351 /* Barbarian Poking Nose Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barbarian Poking Nose Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89EB28C1C10B00FEE351 /* Crying King Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Crying King Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89EC28C1C10B00FEE351 /* Baby Dragon Laughing Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baby Dragon Laughing Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89ED28C1C10B00FEE351 /* Ice Wizard Christmas Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ice Wizard Christmas Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89EE28C1C10B00FEE351 /* Angry Barbarian Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Angry Barbarian Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89EF28C1C10B00FEE351 /* E Wizard Getting Current Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "E Wizard Getting Current Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89F028C1C10B00FEE351 /* Goblin Victory Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Victory Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89F128C1C10B00FEE351 /* Princess Kissing Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Princess Kissing Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89F228C1C10B00FEE351 /* Skeleton Heart Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Skeleton Heart Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89F328C1C10B00FEE351 /* Goblin Finger Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Finger Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89F428C1C10B00FEE351 /* Bandit Dash Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bandit Dash Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89F528C1C10B00FEE351 /* Ram Rider Goat Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ram Rider Goat Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89F628C1C10B00FEE351 /* Giant thumbs Up Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Giant thumbs Up Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89F728C1C10B00FEE351 /* Yawning Princess Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yawning Princess Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89F828C1C10B00FEE351 /* Knight Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Knight Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89F928C1C10B00FEE351 /* Goblin Mean Laugh Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Mean Laugh Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89FA28C1C10B00FEE351 /* Skeleton Bulb Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Skeleton Bulb Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89FB28C1C10B00FEE351 /* King with Sign Exclusive Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "King with Sign Exclusive Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89FC28C1C10B00FEE351 /* Princess Whistling Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Princess Whistling Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89FD28C1C10B00FEE351 /* Hog Rider Hammer Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hog Rider Hammer Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89FE28C1C10B00FEE351 /* Wizard IDK Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wizard IDK Emote.m4a"; sourceTree = "<group>"; };
+		3C0C89FF28C1C10B00FEE351 /* Goblin White Flag Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin White Flag Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0028C1C10B00FEE351 /* Angry King Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Angry King Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0128C1C10B00FEE351 /* Laughing Barbarian Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Laughing Barbarian Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0228C1C10B00FEE351 /* Goblin Not Caring Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Not Caring Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0328C1C10B00FEE351 /* Hog Rider thinking Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hog Rider thinking Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0428C1C10C00FEE351 /* Laughing Goblin Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Laughing Goblin Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0528C1C10C00FEE351 /* Laughing King Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Laughing King Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0628C1C10C00FEE351 /* Electro Wizard Bulb Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Electro Wizard Bulb Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0728C1C10C00FEE351 /* Pig Helmet Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pig Helmet Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0828C1C10C00FEE351 /* Pig Eating Noodles Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pig Eating Noodles Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0928C1C10C00FEE351 /* Wizard Blowing Flame Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wizard Blowing Flame Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0A28C1C10C00FEE351 /* Goblin Pretty Please Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Pretty Please Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0B28C1C10C00FEE351 /* Hog Rider Screaming Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hog Rider Screaming Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0C28C1C10C00FEE351 /* Goblin Biting Nails Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Biting Nails Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0D28C1C10C00FEE351 /* Golden Hog Rider Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Golden Hog Rider Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0E28C1C10C00FEE351 /* Bandit Screaming Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bandit Screaming Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A0F28C1C10C00FEE351 /* Musketeer Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Musketeer Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1028C1C10C00FEE351 /* Pig Dragon Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pig Dragon Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1128C1C10C00FEE351 /* Goblin Kissing Trophy Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Kissing Trophy Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1228C1C10C00FEE351 /* Royal Ghost Exclusive Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Royal Ghost Exclusive Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1328C1C10C00FEE351 /* Laughing Electro Wizard Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Laughing Electro Wizard Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1428C1C10C00FEE351 /* Angry Princess Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Angry Princess Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1528C1C10C00FEE351 /* Goblin Hands on Face Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Hands on Face Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1628C1C10C00FEE351 /* Goblin Glasses Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Glasses Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1828C1C10C00FEE351 /* Princess Victory Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Princess Victory Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1928C1C10C00FEE351 /* Sleeping Pig Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sleeping Pig Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1A28C1C10C00FEE351 /* Barbarian Sword Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barbarian Sword Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1B28C1C10C00FEE351 /* Angry Ram Rider Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Angry Ram Rider Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1C28C1C10C00FEE351 /* Goblin Kissing Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Kissing Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1D28C1C10C00FEE351 /* Nervous Princess Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nervous Princess Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1E28C1C10C00FEE351 /* Goblin Bicep Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Goblin Bicep Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A1F28C1C10C00FEE351 /* Pig Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pig Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2028C1C10C00FEE351 /* Princess Thumbs Up Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Princess Thumbs Up Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2128C1C10C00FEE351 /* Dark Prince Arrow Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dark Prince Arrow Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2228C1C10C00FEE351 /* Angry Giant Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Angry Giant Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2328C1C10C00FEE351 /* Hunter Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hunter Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2428C1C10C00FEE351 /* Inferno Tower Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inferno Tower Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2528C1C10C00FEE351 /* Minion Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Minion Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2628C1C10C00FEE351 /* Pig Screaming Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pig Screaming Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2728C1C10D00FEE351 /* Crying Skeleton Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Crying Skeleton Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2828C1C10D00FEE351 /* Wizard Dap Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wizard Dap Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2928C1C10D00FEE351 /* Hog Rider Kissing Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hog Rider Kissing Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2A28C1C10D00FEE351 /* Mini Pekka Pan Cake Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mini Pekka Pan Cake Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2B28C1C10D00FEE351 /* Bomber Giving Bomb Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bomber Giving Bomb Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2C28C1C10D00FEE351 /* Prince Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prince Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2D28C1C10D00FEE351 /* Princess Arrow Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Princess Arrow Emote.m4a"; sourceTree = "<group>"; };
+		3C0C8A2E28C1C10D00FEE351 /* Giant Crushing Rock Emote.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Giant Crushing Rock Emote.m4a"; sourceTree = "<group>"; };
 		3C30161028C19FBE0061A670 /* ClubDay2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClubDay2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C30161328C19FBE0061A670 /* ClubDay2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDay2022App.swift; sourceTree = "<group>"; };
 		3C30161528C19FBE0061A670 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,8 +196,6 @@
 		3C30161A28C19FBF0061A670 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C30162128C1A0AB0061A670 /* Emote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emote.swift; sourceTree = "<group>"; };
 		3C30162328C1A0D10061A670 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
-		3C30162628C1A17F0061A670 /* clash Royale sad emote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "clash Royale sad emote.mp3"; sourceTree = "<group>"; };
-		3C30162828C1A1840061A670 /* Heheheha sound affect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Heheheha sound affect.mp3"; sourceTree = "<group>"; };
 		3C30162A28C1A1AA0061A670 /* EmotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotesView.swift; sourceTree = "<group>"; };
 		3C30162C28C1A1EC0061A670 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3C30162E28C1A2190061A670 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -113,8 +271,87 @@
 		3C30162528C1A1720061A670 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				3C30162828C1A1840061A670 /* Heheheha sound affect.mp3 */,
-				3C30162628C1A17F0061A670 /* clash Royale sad emote.mp3 */,
+				3C0C89EE28C1C10B00FEE351 /* Angry Barbarian Emote.m4a */,
+				3C0C8A2228C1C10C00FEE351 /* Angry Giant Emote.m4a */,
+				3C0C89DD28C1C10A00FEE351 /* Angry Goblin Emote.m4a */,
+				3C0C8A0028C1C10B00FEE351 /* Angry King Emote.m4a */,
+				3C0C8A1428C1C10C00FEE351 /* Angry Princess Emote.m4a */,
+				3C0C8A1B28C1C10C00FEE351 /* Angry Ram Rider Emote.m4a */,
+				3C0C89EC28C1C10B00FEE351 /* Baby Dragon Laughing Emote.m4a */,
+				3C0C89F428C1C10B00FEE351 /* Bandit Dash Emote.m4a */,
+				3C0C8A0E28C1C10C00FEE351 /* Bandit Screaming Emote.m4a */,
+				3C0C89EA28C1C10B00FEE351 /* Barbarian Poking Nose Emote.m4a */,
+				3C0C8A1A28C1C10C00FEE351 /* Barbarian Sword Emote.m4a */,
+				3C0C8A2B28C1C10D00FEE351 /* Bomber Giving Bomb Emote.m4a */,
+				3C0C89E828C1C10B00FEE351 /* Burning Goblin Emote.m4a */,
+				3C0C89EB28C1C10B00FEE351 /* Crying King Emote.m4a */,
+				3C0C8A2728C1C10D00FEE351 /* Crying Skeleton Emote.m4a */,
+				3C0C8A2128C1C10C00FEE351 /* Dark Prince Arrow Emote.m4a */,
+				3C0C89EF28C1C10B00FEE351 /* E Wizard Getting Current Emote.m4a */,
+				3C0C8A0628C1C10C00FEE351 /* Electro Wizard Bulb Emote.m4a */,
+				3C0C89E028C1C10A00FEE351 /* Electro Wizard thumbs Up Emote.m4a */,
+				3C0C8A2E28C1C10D00FEE351 /* Giant Crushing Rock Emote.m4a */,
+				3C0C89E928C1C10B00FEE351 /* Giant Eating Meat Emote.m4a */,
+				3C0C89F628C1C10B00FEE351 /* Giant thumbs Up Emote.m4a */,
+				3C0C8A1E28C1C10C00FEE351 /* Goblin Bicep Emote.m4a */,
+				3C0C8A0C28C1C10C00FEE351 /* Goblin Biting Nails Emote.m4a */,
+				3C0C89F328C1C10B00FEE351 /* Goblin Finger Emote.m4a */,
+				3C0C8A1628C1C10C00FEE351 /* Goblin Glasses Emote.m4a */,
+				3C0C8A1528C1C10C00FEE351 /* Goblin Hands on Face Emote.m4a */,
+				3C0C8A1C28C1C10C00FEE351 /* Goblin Kissing Emote.m4a */,
+				3C0C8A1128C1C10C00FEE351 /* Goblin Kissing Trophy Emote.m4a */,
+				3C0C89E728C1C10B00FEE351 /* Goblin Knife Emote.m4a */,
+				3C0C89F928C1C10B00FEE351 /* Goblin Mean Laugh Emote.m4a */,
+				3C0C8A0228C1C10B00FEE351 /* Goblin Not Caring Emote.m4a */,
+				3C0C8A0A28C1C10C00FEE351 /* Goblin Pretty Please Emote.m4a */,
+				3C0C89E428C1C10B00FEE351 /* Goblin thumbs Up Emote.m4a */,
+				3C0C89E528C1C10B00FEE351 /* Goblin Tongue Emote.m4a */,
+				3C0C89F028C1C10B00FEE351 /* Goblin Victory Emote.m4a */,
+				3C0C89FF28C1C10B00FEE351 /* Goblin White Flag Emote.m4a */,
+				3C0C8A0D28C1C10C00FEE351 /* Golden Hog Rider Emote.m4a */,
+				3C0C89FD28C1C10B00FEE351 /* Hog Rider Hammer Emote.m4a */,
+				3C0C8A2928C1C10D00FEE351 /* Hog Rider Kissing Emote.m4a */,
+				3C0C8A0B28C1C10C00FEE351 /* Hog Rider Screaming Emote.m4a */,
+				3C0C8A0328C1C10B00FEE351 /* Hog Rider thinking Emote.m4a */,
+				3C0C8A2328C1C10C00FEE351 /* Hunter Emote.m4a */,
+				3C0C89E628C1C10B00FEE351 /* Ice Spirit Emote.m4a */,
+				3C0C89ED28C1C10B00FEE351 /* Ice Wizard Christmas Emote.m4a */,
+				3C0C8A2428C1C10C00FEE351 /* Inferno Tower Emote.m4a */,
+				3C0C89FB28C1C10B00FEE351 /* King with Sign Exclusive Emote.m4a */,
+				3C0C89F828C1C10B00FEE351 /* Knight Emote.m4a */,
+				3C0C89DE28C1C10A00FEE351 /* Knight Phew Exclusive Emote.m4a */,
+				3C0C8A0128C1C10B00FEE351 /* Laughing Barbarian Emote.m4a */,
+				3C0C8A1328C1C10C00FEE351 /* Laughing Electro Wizard Emote.m4a */,
+				3C0C8A0428C1C10C00FEE351 /* Laughing Goblin Emote.m4a */,
+				3C0C8A0528C1C10C00FEE351 /* Laughing King Emote.m4a */,
+				3C0C89DF28C1C10A00FEE351 /* Magic Archer Emote.m4a */,
+				3C0C8A2A28C1C10D00FEE351 /* Mini Pekka Pan Cake Emote.m4a */,
+				3C0C8A2528C1C10C00FEE351 /* Minion Emote.m4a */,
+				3C0C8A0F28C1C10C00FEE351 /* Musketeer Emote.m4a */,
+				3C0C8A1D28C1C10C00FEE351 /* Nervous Princess Emote.m4a */,
+				3C0C8A1028C1C10C00FEE351 /* Pig Dragon Emote.m4a */,
+				3C0C8A0828C1C10C00FEE351 /* Pig Eating Noodles Emote.m4a */,
+				3C0C8A1F28C1C10C00FEE351 /* Pig Emote.m4a */,
+				3C0C8A0728C1C10C00FEE351 /* Pig Helmet Emote.m4a */,
+				3C0C8A2628C1C10C00FEE351 /* Pig Screaming Emote.m4a */,
+				3C0C8A2C28C1C10D00FEE351 /* Prince Emote.m4a */,
+				3C0C8A2D28C1C10D00FEE351 /* Princess Arrow Emote.m4a */,
+				3C0C89F128C1C10B00FEE351 /* Princess Kissing Emote.m4a */,
+				3C0C8A2028C1C10C00FEE351 /* Princess Thumbs Up Emote.m4a */,
+				3C0C8A1828C1C10C00FEE351 /* Princess Victory Emote.m4a */,
+				3C0C89FC28C1C10B00FEE351 /* Princess Whistling Emote.m4a */,
+				3C0C89F528C1C10B00FEE351 /* Ram Rider Goat Emote.m4a */,
+				3C0C8A1228C1C10C00FEE351 /* Royal Ghost Exclusive Emote.m4a */,
+				3C0C89FA28C1C10B00FEE351 /* Skeleton Bulb Emote.m4a */,
+				3C0C89F228C1C10B00FEE351 /* Skeleton Heart Emote.m4a */,
+				3C0C89E228C1C10B00FEE351 /* Skeleton Putting Head Back Emote.m4a */,
+				3C0C8A1928C1C10C00FEE351 /* Sleeping Pig Emote.m4a */,
+				3C0C89E128C1C10A00FEE351 /* Valkyrie Emote.m4a */,
+				3C0C8A0928C1C10C00FEE351 /* Wizard Blowing Flame Emote.m4a */,
+				3C0C8A2828C1C10D00FEE351 /* Wizard Dap Emote.m4a */,
+				3C0C89E328C1C10B00FEE351 /* Wizard Flame Emote.m4a */,
+				3C0C89FE28C1C10B00FEE351 /* Wizard IDK Emote.m4a */,
+				3C0C89F728C1C10B00FEE351 /* Yawning Princess Emote.m4a */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -205,11 +442,90 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C0C8A7528C1C10D00FEE351 /* Hunter Emote.m4a in Resources */,
+				3C0C8A6A28C1C10D00FEE351 /* Princess Victory Emote.m4a in Resources */,
+				3C0C8A6128C1C10D00FEE351 /* Musketeer Emote.m4a in Resources */,
+				3C0C8A3228C1C10D00FEE351 /* Electro Wizard thumbs Up Emote.m4a in Resources */,
+				3C0C8A6328C1C10D00FEE351 /* Goblin Kissing Trophy Emote.m4a in Resources */,
+				3C0C8A5928C1C10D00FEE351 /* Pig Helmet Emote.m4a in Resources */,
+				3C0C8A4528C1C10D00FEE351 /* Goblin Finger Emote.m4a in Resources */,
+				3C0C8A4128C1C10D00FEE351 /* E Wizard Getting Current Emote.m4a in Resources */,
+				3C0C8A5428C1C10D00FEE351 /* Goblin Not Caring Emote.m4a in Resources */,
+				3C0C8A5528C1C10D00FEE351 /* Hog Rider thinking Emote.m4a in Resources */,
+				3C0C8A3428C1C10D00FEE351 /* Skeleton Putting Head Back Emote.m4a in Resources */,
+				3C0C8A7E28C1C10D00FEE351 /* Prince Emote.m4a in Resources */,
+				3C0C8A4328C1C10D00FEE351 /* Princess Kissing Emote.m4a in Resources */,
+				3C0C8A7C28C1C10D00FEE351 /* Mini Pekka Pan Cake Emote.m4a in Resources */,
+				3C0C8A6828C1C10D00FEE351 /* Goblin Glasses Emote.m4a in Resources */,
+				3C0C8A7928C1C10D00FEE351 /* Crying Skeleton Emote.m4a in Resources */,
+				3C0C8A4E28C1C10D00FEE351 /* Princess Whistling Emote.m4a in Resources */,
+				3C0C8A3928C1C10D00FEE351 /* Goblin Knife Emote.m4a in Resources */,
+				3C0C8A7B28C1C10D00FEE351 /* Hog Rider Kissing Emote.m4a in Resources */,
+				3C0C8A7128C1C10D00FEE351 /* Pig Emote.m4a in Resources */,
+				3C0C8A5728C1C10D00FEE351 /* Laughing King Emote.m4a in Resources */,
+				3C0C8A3528C1C10D00FEE351 /* Wizard Flame Emote.m4a in Resources */,
+				3C0C8A4728C1C10D00FEE351 /* Ram Rider Goat Emote.m4a in Resources */,
+				3C0C8A7F28C1C10D00FEE351 /* Princess Arrow Emote.m4a in Resources */,
+				3C0C8A6528C1C10D00FEE351 /* Laughing Electro Wizard Emote.m4a in Resources */,
+				3C0C8A6228C1C10D00FEE351 /* Pig Dragon Emote.m4a in Resources */,
+				3C0C8A4928C1C10D00FEE351 /* Yawning Princess Emote.m4a in Resources */,
+				3C0C8A3F28C1C10D00FEE351 /* Ice Wizard Christmas Emote.m4a in Resources */,
+				3C0C8A6428C1C10D00FEE351 /* Royal Ghost Exclusive Emote.m4a in Resources */,
+				3C0C8A6B28C1C10D00FEE351 /* Sleeping Pig Emote.m4a in Resources */,
+				3C0C8A7428C1C10D00FEE351 /* Angry Giant Emote.m4a in Resources */,
+				3C0C8A5C28C1C10D00FEE351 /* Goblin Pretty Please Emote.m4a in Resources */,
+				3C0C8A3C28C1C10D00FEE351 /* Barbarian Poking Nose Emote.m4a in Resources */,
+				3C0C8A5B28C1C10D00FEE351 /* Wizard Blowing Flame Emote.m4a in Resources */,
+				3C0C8A4A28C1C10D00FEE351 /* Knight Emote.m4a in Resources */,
+				3C0C8A2F28C1C10D00FEE351 /* Angry Goblin Emote.m4a in Resources */,
+				3C0C8A5D28C1C10D00FEE351 /* Hog Rider Screaming Emote.m4a in Resources */,
+				3C0C8A3E28C1C10D00FEE351 /* Baby Dragon Laughing Emote.m4a in Resources */,
+				3C0C8A5128C1C10D00FEE351 /* Goblin White Flag Emote.m4a in Resources */,
+				3C0C8A4228C1C10D00FEE351 /* Goblin Victory Emote.m4a in Resources */,
+				3C0C8A3D28C1C10D00FEE351 /* Crying King Emote.m4a in Resources */,
+				3C0C8A3628C1C10D00FEE351 /* Goblin thumbs Up Emote.m4a in Resources */,
+				3C0C8A6628C1C10D00FEE351 /* Angry Princess Emote.m4a in Resources */,
+				3C0C8A5A28C1C10D00FEE351 /* Pig Eating Noodles Emote.m4a in Resources */,
+				3C0C8A6F28C1C10D00FEE351 /* Nervous Princess Emote.m4a in Resources */,
+				3C0C8A5628C1C10D00FEE351 /* Laughing Goblin Emote.m4a in Resources */,
+				3C0C8A5028C1C10D00FEE351 /* Wizard IDK Emote.m4a in Resources */,
+				3C0C8A4F28C1C10D00FEE351 /* Hog Rider Hammer Emote.m4a in Resources */,
+				3C0C8A7728C1C10D00FEE351 /* Minion Emote.m4a in Resources */,
+				3C0C8A6D28C1C10D00FEE351 /* Angry Ram Rider Emote.m4a in Resources */,
+				3C0C8A8028C1C10D00FEE351 /* Giant Crushing Rock Emote.m4a in Resources */,
+				3C0C8A5E28C1C10D00FEE351 /* Goblin Biting Nails Emote.m4a in Resources */,
 				3C0C89DC28C1B9A900FEE351 /* Galpon-Black.otf in Resources */,
+				3C0C8A7628C1C10D00FEE351 /* Inferno Tower Emote.m4a in Resources */,
+				3C0C8A4B28C1C10D00FEE351 /* Goblin Mean Laugh Emote.m4a in Resources */,
+				3C0C8A6E28C1C10D00FEE351 /* Goblin Kissing Emote.m4a in Resources */,
+				3C0C8A7A28C1C10D00FEE351 /* Wizard Dap Emote.m4a in Resources */,
+				3C0C8A3B28C1C10D00FEE351 /* Giant Eating Meat Emote.m4a in Resources */,
+				3C0C8A5828C1C10D00FEE351 /* Electro Wizard Bulb Emote.m4a in Resources */,
+				3C0C8A7228C1C10D00FEE351 /* Princess Thumbs Up Emote.m4a in Resources */,
+				3C0C8A6728C1C10D00FEE351 /* Goblin Hands on Face Emote.m4a in Resources */,
+				3C0C8A7328C1C10D00FEE351 /* Dark Prince Arrow Emote.m4a in Resources */,
+				3C0C8A4C28C1C10D00FEE351 /* Skeleton Bulb Emote.m4a in Resources */,
+				3C0C8A3828C1C10D00FEE351 /* Ice Spirit Emote.m4a in Resources */,
+				3C0C8A5F28C1C10D00FEE351 /* Golden Hog Rider Emote.m4a in Resources */,
+				3C0C8A7D28C1C10D00FEE351 /* Bomber Giving Bomb Emote.m4a in Resources */,
+				3C0C8A4D28C1C10D00FEE351 /* King with Sign Exclusive Emote.m4a in Resources */,
+				3C0C8A6028C1C10D00FEE351 /* Bandit Screaming Emote.m4a in Resources */,
+				3C0C8A3728C1C10D00FEE351 /* Goblin Tongue Emote.m4a in Resources */,
+				3C0C8A7028C1C10D00FEE351 /* Goblin Bicep Emote.m4a in Resources */,
+				3C0C8A3328C1C10D00FEE351 /* Valkyrie Emote.m4a in Resources */,
+				3C0C8A6C28C1C10D00FEE351 /* Barbarian Sword Emote.m4a in Resources */,
+				3C0C8A3128C1C10D00FEE351 /* Magic Archer Emote.m4a in Resources */,
+				3C0C8A4428C1C10D00FEE351 /* Skeleton Heart Emote.m4a in Resources */,
+				3C0C8A5328C1C10D00FEE351 /* Laughing Barbarian Emote.m4a in Resources */,
 				3C30161B28C19FBF0061A670 /* Preview Assets.xcassets in Resources */,
-				3C30162928C1A1840061A670 /* Heheheha sound affect.mp3 in Resources */,
-				3C30162728C1A17F0061A670 /* clash Royale sad emote.mp3 in Resources */,
+				3C0C8A3028C1C10D00FEE351 /* Knight Phew Exclusive Emote.m4a in Resources */,
+				3C0C8A4828C1C10D00FEE351 /* Giant thumbs Up Emote.m4a in Resources */,
+				3C0C8A7828C1C10D00FEE351 /* Pig Screaming Emote.m4a in Resources */,
+				3C0C8A4028C1C10D00FEE351 /* Angry Barbarian Emote.m4a in Resources */,
+				3C0C8A5228C1C10D00FEE351 /* Angry King Emote.m4a in Resources */,
 				3C30161828C19FBF0061A670 /* Assets.xcassets in Resources */,
+				3C0C8A3A28C1C10D00FEE351 /* Burning Goblin Emote.m4a in Resources */,
+				3C0C8A4628C1C10D00FEE351 /* Bandit Dash Emote.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

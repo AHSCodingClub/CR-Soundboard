@@ -49,11 +49,20 @@ class ViewModel: ObservableObject {
                 } else {
                     self.currentColumnIndex = 0
                 }
+                self.playCurrentColumn()
             }
             .store(in: &cancellables)
     }
 
     func stop() {
         cancellables.removeAll()
+    }
+
+    func playCurrentColumn() {
+        if let currentColumnIndex {
+            let column = columns[currentColumnIndex]
+
+            column.playAllInColumn()
+        }
     }
 }

@@ -18,13 +18,25 @@ struct SoundboardView: View {
                 VStack {
                     SoundboardColumnHeader(columnIndex: columnIndex)
                     
+                    let isEvenColumn = model.numberOfColumns % (columnIndex + 1) == 0
+                    
                     ForEach(column.slots) { slot in
-                        
-                        Color.gray
+                        VStack {
+                            if isEvenColumn {
+                                Color.white
+                            } else {
+                                UIColor(hex: 0xE1E1E1).color
+                            }
+                        }.cornerRadius(16)
                     }
                 }
             }
         }
+        .padding(20)
+        .background(
+            Color(hex: 0x674D3A)
+        )
+        .cornerRadius(24)
     }
 }
 
@@ -33,8 +45,9 @@ struct SoundboardColumnHeader: View {
     
     var body: some View {
         Text("\(columnIndex)")
-            .font(.system(size: 20))
+            .font(.system(size: 24).bold())
             .padding(16)
+            .frame(maxWidth: .infinity)
             .background(.white)
             .cornerRadius(16)
     }

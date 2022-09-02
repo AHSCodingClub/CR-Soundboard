@@ -12,6 +12,7 @@ class ViewModel: ObservableObject {
     var numberOfColumns = 8
     @Published var currentColumnIndex: Int?
     @Published var columns = [Column]()
+    @Published var isOn = false
 
     init() {
         let columns = (0 ..< 8).map { _ in

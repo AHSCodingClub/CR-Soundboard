@@ -14,6 +14,7 @@ class ViewModel: ObservableObject {
     @Published var currentColumnIndex: Int?
     @Published var columns = [Column]()
     @Published var isOn = false
+    @Published var selectedEmote: Emote?
 
     var timerDuration = CGFloat(1)
     var cancellables = Set<AnyCancellable>()

@@ -63,7 +63,7 @@ struct ContentView: View {
             .cornerRadius(24)
             .padding(.horizontal, 24)
             
-            EmotesView()
+            EmotesView(model: model)
                 .padding(.top, -36) /// allow slight overlap
         }
         .padding(.top, 24)

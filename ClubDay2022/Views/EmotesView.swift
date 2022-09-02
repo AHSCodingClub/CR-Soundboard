@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct EmotesView: View {
+    @ObservedObject var model: ViewModel
+
     let columns = [
         GridItem(.adaptive(minimum: 100))
     ]
@@ -19,7 +21,17 @@ struct EmotesView: View {
                 ForEach(Shared.emotes) { emote in
 
                     Button {
-                        print("emote: \(emote)")
+                        withAnimation {
+                            if
+                                let selectedEmote = model.selectedEmote,
+                                selectedEmote == emote
+                            {
+                                model.selectedEmote = nil
+                            } else {
+                                model.selectedEmote = emote
+                            }
+                        }
+
                         if let url = emote.url {
                             AudioPlayer.play(url: url)
                         }
@@ -27,10 +39,22 @@ struct EmotesView: View {
                         Image(emote.name)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .background {
+                                if model.selectedEmote == emote {
+                                    RoundedRectangle(cornerRadius: 16)
+                                        .stroke(Color.green, lineWidth: 6)
+                                        .background(
+                                            RoundedRectangle(cornerRadius: 16)
+                                                .fill(.green.opacity(0.25))
+                                        )
+                                        .padding(-6)
+                                }
+                            }
                     }
                 }
             }
-            .padding(.horizontal, 24)
+            .padding(24)
         }
         .frame(maxHeight: 400)
         .background(

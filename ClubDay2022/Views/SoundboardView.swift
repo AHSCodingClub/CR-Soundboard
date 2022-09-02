@@ -50,6 +50,7 @@ struct SoundboardView: View {
                             .padding(-10)
                     }
                 }
+                .zIndex(model.currentColumnIndex == columnIndex ? 1 : 0)
             }
         }
         .padding(20)
@@ -76,7 +77,7 @@ struct SoundboardSlotView: View {
             if let selectedEmote = slot.selectedEmote {
                 Templates.Menu {
                     Templates.MenuItem {
-                        print("pressed!")
+                        slot.selectedEmote = nil
                     } label: { pressed in
                         Text("Remove Emote")
                             .font(.custom("Galpon-Black", size: 24))

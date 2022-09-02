@@ -30,6 +30,8 @@ struct ContentView: View {
                     
                     Spacer()
                     
+                    SpeedControlView(model: model)
+                    
                     Button {
                         withAnimation {
                             model.isOn.toggle()
@@ -75,8 +77,35 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+struct SpeedControlView: View {
+    @ObservedObject var model: ViewModel
+    
+    var body: some View {
+        HStack(spacing: 0) {
+            Button {
+                if model.timerDuration >= 0.2 {
+                    model.timerDuration -= 0.2
+                }
+            } label: {
+                Text("-")
+                    .padding(.horizontal, 20)
+                    .background(.black.opacity(0.1))
+            }
+            
+            Text(String(format: "%.1f", model.timerDuration))
+                .padding(.horizontal, 30)
+            
+            Button {
+                model.timerDuration += 0.2
+            } label: {
+                Text("+")
+                    .padding(.horizontal, 20)
+                    .background(.black.opacity(0.1))
+            }
+        }
+        .foregroundColor(.white)
+        .font(.custom("Galpon-Black", size: 56))
+        .background(.gray)
+        .cornerRadius(16)
     }
 }

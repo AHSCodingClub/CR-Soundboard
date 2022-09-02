@@ -15,9 +15,10 @@ class ViewModel: ObservableObject {
     @Published var columns = [Column]()
     @Published var isOn = false
     @Published var selectedEmote: Emote?
+    @Published var timerDuration = CGFloat(1)
 
-    var timerDuration = CGFloat(1)
     var cancellables = Set<AnyCancellable>()
+    var timerCancellables = Set<AnyCancellable>()
 
     init() {
         let columns = (0 ..< 8).map { _ in
@@ -32,30 +33,45 @@ class ViewModel: ObservableObject {
             )
         }
         self.columns = columns
+
+        $timerDuration.sink { [weak self] timerDuration in
+            guard let self = self else { return }
+
+            DispatchQueue.main.async {
+                if self.isOn {
+                    self.stop()
+                    self.start()
+                }
+            }
+        }
+        .store(in: &cancellables)
     }
 
     func start() {
-        Timer.publish(every: timerDuration, on: .main, in: .default)
+        Timer.publish(every: max(0.05, timerDuration), on: .main, in: .default)
             .autoconnect()
             .sink { [weak self] _ in
                 guard let self = self else { return }
-
-                if let currentColumnIndex = self.currentColumnIndex {
-                    var newColumnIndex = currentColumnIndex + 1
-                    if newColumnIndex >= self.numberOfColumns {
-                        newColumnIndex = 0
-                    }
-                    self.currentColumnIndex = newColumnIndex
-                } else {
-                    self.currentColumnIndex = 0
-                }
-                self.playCurrentColumn()
+                self.timerFired()
             }
-            .store(in: &cancellables)
+            .store(in: &timerCancellables)
     }
 
     func stop() {
-        cancellables.removeAll()
+        timerCancellables.removeAll()
+    }
+
+    func timerFired() {
+        if let currentColumnIndex = currentColumnIndex {
+            var newColumnIndex = currentColumnIndex + 1
+            if newColumnIndex >= numberOfColumns {
+                newColumnIndex = 0
+            }
+            self.currentColumnIndex = newColumnIndex
+        } else {
+            currentColumnIndex = 0
+        }
+        playCurrentColumn()
     }
 
     func playCurrentColumn() {

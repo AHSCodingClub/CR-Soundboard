@@ -76,19 +76,25 @@ struct SoundboardSlotView: View {
         VStack {
             if let selectedEmote = slot.selectedEmote {
                 Templates.Menu {
-                    Templates.MenuItem {
-                        slot.selectedEmote = nil
-                    } label: { pressed in
-                        Text("Remove Emote")
-                            .font(.custom("Galpon-Black", size: 24))
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
-                            .padding(.horizontal, 24)
-                            .padding(.vertical, 16)
-                            .background(pressed ? Templates.buttonHighlightColor : .clear)
-                            .background(Color.blue)
+                    VStack {
+                        Templates.MenuItem {
+                            withAnimation {
+                                slot.selectedEmote = nil
+                            }
+                        } label: { pressed in
+                            Text("Remove Emote")
+                                .font(.custom("Galpon-Black", size: 24))
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .padding(.horizontal, 24)
+                                .padding(.vertical, 16)
+                                .background(pressed ? Templates.buttonHighlightColor : .clear)
+                                .background(Color.blue)
+                                .cornerRadius(12)
+                        }
                     }
-
+                    .padding(16)
+                    .background(UIColor.systemBlue.toColor(.black, percentage: 0.1).color)
                 } label: { fade in
                     base
                         .overlay {
@@ -168,6 +174,7 @@ struct SoundboardColumnHeader: View {
     var body: some View {
         Button {
             model.currentColumnIndex = columnIndex
+            model.playCurrentColumn()
         } label: {
             Text("\(columnIndex + 1)")
                 .font(.custom("Galpon-Black", size: 36))

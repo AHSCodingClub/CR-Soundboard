@@ -20,6 +20,9 @@ struct SoundboardView: View {
                 
                 VStack {
                     SoundboardColumnHeader(columnIndex: columnIndex)
+                        .padding(.bottom, 20)
+                    
+                    
                     let isEvenColumn = columnIndex % 2 == 0
                     
                     ForEach($column.slots) { $slot in
@@ -48,6 +51,10 @@ struct SoundboardView: View {
             }
         }
         .padding(20)
+        .background(alignment: .top) {
+            Color(hex: 0xAF7C47)
+                .frame(height: 100)
+        }
         .background(
             Color(hex: 0x674D3A)
         )

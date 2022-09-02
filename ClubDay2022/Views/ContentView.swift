@@ -55,7 +55,9 @@ struct ContentView: View {
                 SoundboardView(model: model)
                     .padding(.top, 8)
             }
-            .padding(24)
+            .padding(.top, 8)
+            .padding(.horizontal, 24)
+            .padding(.bottom, 24)
             .background(
                 Color(hex: 0x0060C2)
             )

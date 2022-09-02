@@ -371,9 +371,9 @@
 			children = (
 				3C30162E28C1A2190061A670 /* ViewModel.swift */,
 				3C30163228C1A3290061A670 /* AudioPlayer.swift */,
-				3C30162128C1A0AB0061A670 /* Emote.swift */,
 				3C30163628C1A5A20061A670 /* Column.swift */,
 				3C30163828C1A5AF0061A670 /* Slot.swift */,
+				3C30162128C1A0AB0061A670 /* Emote.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

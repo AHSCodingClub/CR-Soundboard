@@ -22,7 +22,7 @@ extension Emote {
 
             return url
         }
-        print("error.")
+        print("Error for \(audioFileName)")
         return nil
     }
 }

@@ -12,10 +12,23 @@ struct ContentView: View {
     @StateObject var model = ViewModel()
     
     var body: some View {
+        GeometryReader { geometry in
+            
+            /// iPad portrait width: 1024
+            /// /// iPad landscape width: 1366
+            content(isVertical: geometry.size.width < 1100)
+        }
+    }
+    
+    func content(isVertical: Bool) -> some View {
         VStack {
             VStack(alignment: .leading, spacing: 0) {
                 HStack(spacing: 14) {
-                    Group {
+                    let layout = isVertical
+                        ? AnyLayout(_VStackLayout(alignment: .leading, spacing: 0))
+                        : AnyLayout(_HStackLayout(spacing: 14))
+                    
+                    layout {
                         Text("CL4SH ROY4L3")
                             .foregroundColor(.white)
                             
@@ -91,6 +104,7 @@ struct SpeedControlView: View {
             } label: {
                 Text("-")
                     .padding(.horizontal, 20)
+                    .frame(maxHeight: .infinity)
                     .background(.black.opacity(0.1))
             }
             
@@ -102,6 +116,7 @@ struct SpeedControlView: View {
             } label: {
                 Text("+")
                     .padding(.horizontal, 20)
+                    .frame(maxHeight: .infinity)
                     .background(.black.opacity(0.1))
             }
         }
@@ -109,5 +124,6 @@ struct SpeedControlView: View {
         .font(.custom("Galpon-Black", size: 56))
         .background(.gray)
         .cornerRadius(16)
+        .fixedSize(horizontal: false, vertical: true)
     }
 }

@@ -19,9 +19,11 @@ struct SoundboardView: View {
                 let columnIndex = model.columns.firstIndex(where: { $0.id == column.id }) ?? 0
                 
                 VStack {
-                    SoundboardColumnHeader(columnIndex: columnIndex)
-                        .padding(.bottom, 20)
-                    
+                    SoundboardColumnHeader(
+                        model: model,
+                        columnIndex: columnIndex
+                    )
+                    .padding(.bottom, 20)
                     
                     let isEvenColumn = columnIndex % 2 == 0
                     
@@ -53,7 +55,7 @@ struct SoundboardView: View {
         .padding(20)
         .background(alignment: .top) {
             Color(hex: 0xAF7C47)
-                .frame(height: 100)
+                .frame(height: 102)
         }
         .background(
             Color(hex: 0x674D3A)
@@ -87,9 +89,11 @@ struct SoundboardSlotView: View {
                     }
 
                 } label: { fade in
-                    base.overlay {
-                        image(selectedEmote: selectedEmote)
-                    }
+                    base
+                        .overlay {
+                            image(selectedEmote: selectedEmote)
+                        }
+                        .cornerRadius(16)
                 }
 
             } else {
@@ -115,7 +119,6 @@ struct SoundboardSlotView: View {
                 UIColor(hex: 0xE1E1E1).color
             }
         }
-        .cornerRadius(16)
     }
     
     var button: some View {
@@ -134,6 +137,12 @@ struct SoundboardSlotView: View {
                     base
                 }
             }
+            .overlay {
+                if pulseAnimationOn {
+                    Color.green.opacity(0.5)
+                }
+            }
+            .cornerRadius(16)
         }
     }
     
@@ -152,15 +161,21 @@ struct SoundboardSlotView: View {
 }
 
 struct SoundboardColumnHeader: View {
+    @ObservedObject var model: ViewModel
     var columnIndex: Int
     
     var body: some View {
-        Text("\(columnIndex + 1)")
-            .font(.custom("Galpon-Black", size: 36))
-            .padding(.horizontal, 16)
-            .padding(.vertical, 12)
-            .frame(maxWidth: .infinity)
-            .background(.white)
-            .cornerRadius(16)
+        Button {
+            model.currentColumnIndex = columnIndex
+        } label: {
+            Text("\(columnIndex + 1)")
+                .font(.custom("Galpon-Black", size: 36))
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+                .frame(maxWidth: .infinity)
+                .background(.white)
+                .cornerRadius(16)
+                .foregroundColor(.black)
+        }
     }
 }

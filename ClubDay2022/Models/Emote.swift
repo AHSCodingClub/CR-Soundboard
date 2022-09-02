@@ -9,9 +9,7 @@
 import SwiftUI
 
 struct Emote: Identifiable, Equatable {
-    var id: String {
-        name
-    }
+    let id = UUID()
 
     var name: String
     var audioFileName: String
@@ -19,11 +17,9 @@ struct Emote: Identifiable, Equatable {
 
 extension Emote {
     var url: URL? {
-        print("getting rl...")
         if let path = Bundle.main.path(forResource: audioFileName, ofType: "mp3") {
             let url = URL(fileURLWithPath: path)
 
-            print("return url")
             return url
         }
         return nil

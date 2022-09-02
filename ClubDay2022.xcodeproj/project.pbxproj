@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0C89DC28C1B9A900FEE351 /* Galpon-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C89D928C1B94300FEE351 /* Galpon-Black.otf */; };
 		3C30161428C19FBE0061A670 /* ClubDay2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30161328C19FBE0061A670 /* ClubDay2022App.swift */; };
 		3C30161628C19FBE0061A670 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30161528C19FBE0061A670 /* ContentView.swift */; };
 		3C30161828C19FBF0061A670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C30161728C19FBF0061A670 /* Assets.xcassets */; };
@@ -22,9 +23,12 @@
 		3C30163528C1A57B0061A670 /* SoundboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30163428C1A57B0061A670 /* SoundboardView.swift */; };
 		3C30163728C1A5A20061A670 /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30163628C1A5A20061A670 /* Column.swift */; };
 		3C30163928C1A5AF0061A670 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30163828C1A5AF0061A670 /* Slot.swift */; };
+		3C30163C28C1B7730061A670 /* Popovers in Frameworks */ = {isa = PBXBuildFile; productRef = 3C30163B28C1B7730061A670 /* Popovers */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C0C89D928C1B94300FEE351 /* Galpon-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Galpon-Black.otf"; sourceTree = "<group>"; };
+		3C0C89DB28C1B96100FEE351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3C30161028C19FBE0061A670 /* ClubDay2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClubDay2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C30161328C19FBE0061A670 /* ClubDay2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDay2022App.swift; sourceTree = "<group>"; };
 		3C30161528C19FBE0061A670 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 		3C30163428C1A57B0061A670 /* SoundboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundboardView.swift; sourceTree = "<group>"; };
 		3C30163628C1A5A20061A670 /* Column.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
 		3C30163828C1A5AF0061A670 /* Slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		3C30163D28C1B7830061A670 /* Popovers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Popovers; path = ../../../../Code/Popovers; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,15 +53,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C30163C28C1B7730061A670 /* Popovers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C0C89DA28C1B94700FEE351 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C30162C28C1A1EC0061A670 /* Utilities.swift */,
+				3C0C89D928C1B94300FEE351 /* Galpon-Black.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3C30160728C19FBD0061A670 = {
 			isa = PBXGroup;
 			children = (
+				3C30163D28C1B7830061A670 /* Popovers */,
 				3C30161228C19FBE0061A670 /* ClubDay2022 */,
 				3C30161128C19FBE0061A670 /* Products */,
 			);
@@ -73,11 +89,12 @@
 		3C30161228C19FBE0061A670 /* ClubDay2022 */ = {
 			isa = PBXGroup;
 			children = (
+				3C0C89DB28C1B96100FEE351 /* Info.plist */,
 				3C30161328C19FBE0061A670 /* ClubDay2022App.swift */,
 				3C30162328C1A0D10061A670 /* Shared.swift */,
 				3C30163128C1A3150061A670 /* Models */,
 				3C30163028C1A3100061A670 /* Views */,
-				3C30162C28C1A1EC0061A670 /* Utilities.swift */,
+				3C0C89DA28C1B94700FEE351 /* Resources */,
 				3C30162528C1A1720061A670 /* Audio */,
 				3C30161728C19FBF0061A670 /* Assets.xcassets */,
 				3C30161928C19FBF0061A670 /* Preview Content */,
@@ -140,6 +157,9 @@
 			dependencies = (
 			);
 			name = ClubDay2022;
+			packageProductDependencies = (
+				3C30163B28C1B7730061A670 /* Popovers */,
+			);
 			productName = ClubDay2022;
 			productReference = 3C30161028C19FBE0061A670 /* ClubDay2022.app */;
 			productType = "com.apple.product-type.application";
@@ -168,6 +188,9 @@
 				Base,
 			);
 			mainGroup = 3C30160728C19FBD0061A670;
+			packageReferences = (
+				3C30163A28C1B7730061A670 /* XCRemoteSwiftPackageReference "Popovers" */,
+			);
 			productRefGroup = 3C30161128C19FBE0061A670 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C0C89DC28C1B9A900FEE351 /* Galpon-Black.otf in Resources */,
 				3C30161B28C19FBF0061A670 /* Preview Assets.xcassets in Resources */,
 				3C30162928C1A1840061A670 /* Heheheha sound affect.mp3 in Resources */,
 				3C30162728C1A17F0061A670 /* clash Royale sad emote.mp3 in Resources */,
@@ -338,6 +362,7 @@
 				DEVELOPMENT_TEAM = YA533DMD5J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClubDay2022/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -367,6 +392,7 @@
 				DEVELOPMENT_TEAM = YA533DMD5J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClubDay2022/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -407,6 +433,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C30163A28C1B7730061A670 /* XCRemoteSwiftPackageReference "Popovers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aheze/Popovers";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C30163B28C1B7730061A670 /* Popovers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C30163A28C1B7730061A670 /* XCRemoteSwiftPackageReference "Popovers" */;
+			productName = Popovers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C30160828C19FBD0061A670 /* Project object */;
 }

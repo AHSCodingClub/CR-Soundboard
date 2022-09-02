@@ -18,14 +18,15 @@ struct ContentView: View {
                     Group {
                         Text("CL4SH ROY4L3")
                             .foregroundColor(.white)
-                            .font(.system(size: 46))
+                            .font(.custom("Galpon-Black", size: 56))
                         
                         Text("SOUNDBOARD")
                             .foregroundColor(Color(hex: 0xF7AD18))
-                            .font(.custom("Times", size: 46))
+                            .font(.custom("Galpon-Black", size: 56))
                             .italic()
                     }
-                    .padding(.vertical, 14)
+                    .padding(.top, 2)
+                    .padding(.bottom, 4)
                     
                     Spacer()
                     
@@ -43,14 +44,12 @@ struct ContentView: View {
                     } label: {
                         Text(model.isOn ? "ON" : "OFF")
                             .foregroundColor(.white)
-                            .font(.system(size: 46))
+                            .font(.custom("Galpon-Black", size: 56))
                             .padding(.horizontal, 20)
-                            .padding(.vertical, 12)
                             .background(model.isOn ? Color.green : Color.gray)
                             .cornerRadius(16)
                     }
                 }
-                .fontWeight(.heavy)
                 .padding(.top, 4)
                 
                 SoundboardView(model: model)

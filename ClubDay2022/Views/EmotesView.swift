@@ -17,7 +17,7 @@ struct EmotesView: View {
 
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: columns, spacing: 12) {
+            LazyVGrid(columns: columns, spacing: 16) {
                 ForEach(Shared.emotes) { emote in
 
                     Button {

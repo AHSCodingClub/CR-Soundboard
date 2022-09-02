@@ -6,6 +6,7 @@
 //  Copyright © 2022 A. Zheng. All rights reserved.
 //
     
+import Popovers
 import SwiftUI
 
 struct SoundboardView: View {
@@ -13,11 +14,8 @@ struct SoundboardView: View {
     
     var body: some View {
         HStack {
-//            ForEach(Array(zip(model.columns.indices, model.columns)), id: \.1.id) { columnIndex, column in
-            
             ForEach($model.columns) { $column in
 
-//                let columnIndex: Int = 0
                 let columnIndex = model.columns.firstIndex(where: { $0.id == column.id }) ?? 0
                 
                 VStack {
@@ -65,6 +63,55 @@ struct SoundboardSlotView: View {
     @State var pulseAnimationOn = false
     
     var body: some View {
+        VStack {
+            if let selectedEmote = slot.selectedEmote {
+                Templates.Menu {
+                    Templates.MenuItem {
+                        print("pressed!")
+                    } label: { pressed in
+                        Text("Remove Emote")
+                            .font(.custom("Galpon-Black", size: 24))
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, 24)
+                            .padding(.vertical, 16)
+                            .background(pressed ? Templates.buttonHighlightColor : .clear)
+                            .background(Color.blue)
+                    }
+
+                } label: { fade in
+                    base.overlay {
+                        image(selectedEmote: selectedEmote)
+                    }
+                }
+
+            } else {
+                button
+            }
+        }
+        .onChange(of: model.selectedEmote) { emote in
+            if emote != nil, slot.selectedEmote == nil {
+                withAnimation(.linear(duration: 0.6).repeatForever()) {
+                    pulseAnimationOn = true
+                }
+            } else {
+                pulseAnimationOn = false
+            }
+        }
+    }
+    
+    var base: some View {
+        VStack {
+            if isEvenColumn {
+                Color.white
+            } else {
+                UIColor(hex: 0xE1E1E1).color
+            }
+        }
+        .cornerRadius(16)
+    }
+    
+    var button: some View {
         Button {
             if let emote = model.selectedEmote {
                 withAnimation {
@@ -77,41 +124,23 @@ struct SoundboardSlotView: View {
                 if slot.selectedEmote != nil {
                     Color.green
                 } else {
-                    if isEvenColumn {
-                        Color.white
-                    } else {
-                        UIColor(hex: 0xE1E1E1).color
-                    }
+                    base
                 }
-            }
-            .overlay {
-                if let selectedEmote = slot.selectedEmote {
-                    Image(selectedEmote.name)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .shadow(
-                            color: .black.opacity(0.5),
-                            radius: 6,
-                            x: 0,
-                            y: 2
-                        )
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    
-                } else if pulseAnimationOn {
-                    Color.green.opacity(0.5)
-                }
-            }
-            .cornerRadius(16)
-        }
-        .onChange(of: model.selectedEmote) { emote in
-            if emote != nil, slot.selectedEmote == nil {
-                withAnimation(.linear(duration: 0.6).repeatForever()) {
-                    pulseAnimationOn = true
-                }
-            } else {
-                pulseAnimationOn = false
             }
         }
+    }
+    
+    func image(selectedEmote: Emote) -> some View {
+        Image(selectedEmote.name)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .shadow(
+                color: .black.opacity(0.5),
+                radius: 6,
+                x: 0,
+                y: 2
+            )
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
@@ -119,9 +148,10 @@ struct SoundboardColumnHeader: View {
     var columnIndex: Int
     
     var body: some View {
-        Text("\(columnIndex)")
-            .font(.system(size: 24).bold())
-            .padding(16)
+        Text("\(columnIndex + 1)")
+            .font(.custom("Galpon-Black", size: 36))
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
             .frame(maxWidth: .infinity)
             .background(.white)
             .cornerRadius(16)

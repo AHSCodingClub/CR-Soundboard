@@ -15,6 +15,8 @@ struct ContentView: View {
         VStack {
             Text("Emotes")
 
+            SoundboardView(model: model)
+            
             EmotesView()
         }
         .background(Color.red)

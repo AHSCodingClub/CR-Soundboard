@@ -20,7 +20,6 @@ class AudioPlayer: NSObject {
 
         // If we found one, return it
         if let playerToUse = availablePlayers.first {
-            print("Reusing player for \(url.lastPathComponent)")
             playerToUse.play()
         }
 

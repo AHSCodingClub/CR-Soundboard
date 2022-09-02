@@ -9,7 +9,20 @@
 import SwiftUI
 
 class ViewModel: ObservableObject {
-    @Published var selectedEmotes = [Emote]()
-    
-    
+    var numberOfColumns = 8
+    @Published var currentColumnIndex: Int?
+    @Published var columns = [Column]()
+
+    init() {
+        let columns = (0 ..< 8).map { _ in
+            Column(
+                slots: [ /// 3 slots by default
+                    .init(),
+                    .init(),
+                    .init(),
+                ]
+            )
+        }
+        self.columns = columns
+    }
 }

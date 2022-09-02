@@ -10,9 +10,10 @@ import AVFoundation
 import SwiftUI
 
 enum Shared {
-    // An array of all players stored in the pool
+    /// An array of all players stored in the pool
     static var players: [AVAudioPlayer] = []
 
+    /// All emotes
     static let emotes: [Emote] = [
         .init(name: "Laughing_King", audioFileName: "Laughing King Emote"),
         .init(name: "Angry_King", audioFileName: "Angry King Emote"),
@@ -91,7 +92,7 @@ enum Shared {
         .init(name: "Trophy_Goblin", audioFileName: "Skeleton Bulb Emote"),
         .init(name: "Trumpet_Princess", audioFileName: "Skeleton Heart Emote"),
         .init(name: "Whistling_Princess", audioFileName: "Skeleton Putting Head Back Emote"),
-        
+
         .init(name: "10th_Anniversary_Supercel_King", audioFileName: "Valkyrie Emote"),
         .init(name: "Angry_King", audioFileName: "Wizard Blowing Flame Emote"),
         .init(name: "Angry_Princess", audioFileName: "Wizard Dap Emote"),

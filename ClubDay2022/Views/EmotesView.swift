@@ -15,7 +15,7 @@ struct EmotesView: View {
 
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: columns, spacing: 10) {
+            LazyVGrid(columns: columns, spacing: 12) {
                 ForEach(Shared.emotes) { emote in
 
                     Button {
@@ -30,8 +30,18 @@ struct EmotesView: View {
                     }
                 }
             }
-            .padding(.horizontal)
+            .padding(.horizontal, 24)
         }
-        .frame(maxHeight: 200)
+        .frame(maxHeight: 400)
+        .background(
+            Color(hex: 0xEEEEEE)
+        )
+        .cornerRadius(24, corners: [.topLeft, .topRight])
+        .shadow(
+            color: .black.opacity(0.75),
+            radius: 32,
+            x: 0,
+            y: 3
+        )
     }
 }

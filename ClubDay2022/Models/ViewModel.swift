@@ -21,7 +21,9 @@ class ViewModel: ObservableObject {
     init() {
         let columns = (0 ..< 8).map { _ in
             Column(
-                slots: [ /// 3 slots by default
+                slots: [ /// 5 slots by default
+                    .init(),
+                    .init(),
                     .init(),
                     .init(),
                     .init(),

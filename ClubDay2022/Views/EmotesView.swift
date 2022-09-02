@@ -9,23 +9,29 @@
 import SwiftUI
 
 struct EmotesView: View {
-    var body: some View {
-        HStack {
-            ForEach(Shared.emotes) { emote in
+    let columns = [
+        GridItem(.adaptive(minimum: 100))
+    ]
 
-                Button {
-                    print("emote: \(emote)")
-                    if let url = emote.url {
-                        AudioPlayer.play(url: url)
-                        
+    var body: some View {
+        ScrollView {
+            LazyVGrid(columns: columns, spacing: 10) {
+                ForEach(Shared.emotes) { emote in
+
+                    Button {
+                        print("emote: \(emote)")
+                        if let url = emote.url {
+                            AudioPlayer.play(url: url)
+                        }
+                    } label: {
+                        Image(emote.name)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
                     }
-                } label: {
-                    Image(emote.name)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
                 }
             }
+            .padding(.horizontal)
         }
-        .background(Color.gray)
+        .frame(maxHeight: 200)
     }
 }

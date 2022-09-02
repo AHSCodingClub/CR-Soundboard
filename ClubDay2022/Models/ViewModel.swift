@@ -6,6 +6,7 @@
 //  Copyright © 2022 A. Zheng. All rights reserved.
 //
 
+import Combine
 import SwiftUI
 
 class ViewModel: ObservableObject {
@@ -13,6 +14,9 @@ class ViewModel: ObservableObject {
     @Published var currentColumnIndex: Int?
     @Published var columns = [Column]()
     @Published var isOn = false
+
+    var timerDuration = CGFloat(1)
+    var cancellables = Set<AnyCancellable>()
 
     init() {
         let columns = (0 ..< 8).map { _ in
@@ -25,5 +29,28 @@ class ViewModel: ObservableObject {
             )
         }
         self.columns = columns
+    }
+
+    func start() {
+        Timer.publish(every: timerDuration, on: .main, in: .default)
+            .autoconnect()
+            .sink { [weak self] _ in
+                guard let self = self else { return }
+
+                if let currentColumnIndex = self.currentColumnIndex {
+                    var newColumnIndex = currentColumnIndex + 1
+                    if newColumnIndex >= self.numberOfColumns {
+                        newColumnIndex = 0
+                    }
+                    self.currentColumnIndex = newColumnIndex
+                } else {
+                    self.currentColumnIndex = 0
+                }
+            }
+            .store(in: &cancellables)
+    }
+
+    func stop() {
+        cancellables.removeAll()
     }
 }

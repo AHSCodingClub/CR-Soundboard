@@ -26,5 +26,6 @@ struct EmotesView: View {
                 }
             }
         }
+        .background(Color.gray)
     }
 }

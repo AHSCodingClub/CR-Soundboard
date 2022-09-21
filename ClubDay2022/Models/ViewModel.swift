@@ -21,16 +21,11 @@ class ViewModel: ObservableObject {
     var timerCancellables = Set<AnyCancellable>()
 
     init() {
+        let height = UIScreen.main.bounds.height
+        let numberOfRows = Int(height) / 80 /// 80 is the approximate height of a row
+        let slots = (0 ..< numberOfRows).map { _ in Slot() }
         let columns = (0 ..< 8).map { _ in
-            Column(
-                slots: [ /// 5 slots by default
-                    .init(),
-                    .init(),
-                    .init(),
-                    .init(),
-                    .init(),
-                ]
-            )
+            Column(slots: slots)
         }
         self.columns = columns
 

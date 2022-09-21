@@ -56,7 +56,7 @@ struct SoundboardView: View {
         .padding(20)
         .background(alignment: .top) {
             Color(hex: 0xAF7C47)
-                .frame(height: 70)
+                .frame(height: 67)
         }
         .background(
             Color(hex: 0x674D3A)

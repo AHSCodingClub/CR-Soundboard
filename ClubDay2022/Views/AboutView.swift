@@ -11,6 +11,13 @@ import SwiftUI
 struct AboutView: View {
     @Binding var showingAbout: Bool
     
+    var officers: [(position: String, name: String)] = [
+        ("President", "Andrew Zheng"),
+        ("VP", "Krishna Ram"),
+        ("Secretary", "H. Kamran"),
+        ("Treasurer", "Isaac Wang")
+    ]
+    
     var members: [String] = [
         "Leo W.",
         "Amir S.",
@@ -37,7 +44,7 @@ struct AboutView: View {
     ]
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             HStack {
                 Text("About")
                     .font(.custom("Galpon-Black", size: 36))
@@ -62,7 +69,7 @@ struct AboutView: View {
             )
             
             ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
+                VStack(alignment: .leading, spacing: 30) {
                     AboutSectionView(
                         title: "About This App",
                         description: "Just an emote soundboard. Tap an emote on the right, then select a slot to drop it."
@@ -78,11 +85,16 @@ struct AboutView: View {
                             VStack(alignment: .leading, spacing: 6) {
                                 Text("Club Officers")
                                     .font(.custom("Galpon-Black", size: 24))
-                                
-                                Text("President: Andrew Zheng")
-                                Text("VP: Krishna Ram")
-                                Text("Secretary: H. Kamran")
-                                Text("Treasurer: Isaac Wang")
+                       
+                                VStack(alignment: .leading) {
+                                    ForEach(officers, id: \.0) { officer in
+                                        Text(officer.position)
+                                        + Text(": ")
+                                        + Text(officer.name)
+                                            .foregroundColor(.white)
+                                    }
+                                }
+                                .foregroundColor(.white.opacity(0.5))
                             }
                             .font(.title3)
                             
@@ -96,7 +108,6 @@ struct AboutView: View {
                                             .frame(maxWidth: .infinity, alignment: .leading)
                                     }
                                 }
-                                
                             }
                             .font(.title3)
                         }
@@ -106,14 +117,13 @@ struct AboutView: View {
                         title: "Disclaimer",
                         description: "This material is unofficial and is not endorsed by Supercell. For more information see Supercell's Fan Content Policy: www.supercell.com/fan-content-policy."
                     )
-                    .tint(.green) /// for the link coloring
                     
                     AboutSectionView(
                         title: "Source Code",
-                        description: "Released under MIT license on GitHub - that means you can do whatever you want with it! [https://github.com/AHSCodingClub/ClubDay2022-Fall](https://github.com/AHSCodingClub/ClubDay2022-Fall)."
+                        description: "This is our first app! We made it to learn the Swift programming language. It's open source, so feel free to add whatever you want: [github.com/AHSCodingClub/ClubDay2022-Fall](https://github.com/AHSCodingClub/ClubDay2022-Fall)."
                     )
-                    .tint(.green) /// for the link coloring
                 }
+                .tint(UIColor.systemGreen.toColor(.white, percentage: 0.25).color) /// for the link coloring
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(20)
             }

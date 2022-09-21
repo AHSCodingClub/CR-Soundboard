@@ -30,7 +30,7 @@ struct AboutView: View {
     ]
     
     let columns = [
-        GridItem(.adaptive(minimum: 100))
+        GridItem(.adaptive(minimum: 140))
     ]
     
     var body: some View {
@@ -65,7 +65,7 @@ struct AboutView: View {
                         description: "Just an emote soundboard. Tap an emote on the right, then select a slot to drop it."
                     )
                     
-                    VStack(alignment: .leading, spacing: 10) {
+                    VStack(alignment: .leading, spacing: 16) {
                         AboutSectionView(
                             title: "Made By",
                             description: "AHS Coding Club, Fall 2022 Project"

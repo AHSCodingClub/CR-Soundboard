@@ -33,36 +33,36 @@ struct ContentView: View {
                 .ignoresSafeArea()
         )
         .sheet(isPresented: $showingAbout) {
-            AboutView()
+            AboutView(showingAbout: $showingAbout)
         }
     }
 
     var header: some View {
         HStack(spacing: 14) {
-            Button {
-                showingAbout = true
-            } label: {
-                Image(systemName: "info")
-                    .background(Color.blue)
-                    .cornerRadius(16)
-            }
-            
             HStack(spacing: 8) {
                 Text("CL4SH ROY4L3")
                     .foregroundColor(.white)
                     
-                Button {
-                    model.currentColumnIndex = nil
-                } label: {
-                    Text("SOUNDBOARD")
-                        .foregroundColor(Color(hex: 0xF7AD18))
-                }
+                Text("SOUNDBOARD")
+                    .foregroundColor(Color(hex: 0xF7AD18))
             }
             
             .padding(.top, 2)
             .padding(.bottom, 4)
             
             Spacer()
+            
+            Button {
+                showingAbout = true
+            } label: {
+                Image(systemName: "info")
+                    .foregroundColor(.white)
+                    .font(.system(size: 24, weight: .bold))
+                    .frame(width: 50, height: 30)
+                    .frame(maxHeight: .infinity)
+                    .background(Color.white.opacity(0.2))
+                    .cornerRadius(12)
+            }
             
             SpeedControlView(model: model)
             
@@ -81,14 +81,14 @@ struct ContentView: View {
                 Text(model.isOn ? "ON" : "OFF")
                     .foregroundColor(.white)
                     .frame(maxHeight: .infinity)
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 14)
                     .background(model.isOn ? Color.green : Color.gray)
-                    .cornerRadius(16)
+                    .cornerRadius(12)
             }
         }
-        .frame(height: 32)
+        .frame(height: 36)
         .padding(.vertical, 8)
-        .font(.custom("Galpon-Black", size: 26))
+        .font(.custom("Galpon-Black", size: 28))
         .padding(.horizontal, 20)
         .background(
             Color(hex: 0x0060C2)
@@ -107,7 +107,7 @@ struct SpeedControlView: View {
                 }
             } label: {
                 Text("-")
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 14)
                     .frame(maxHeight: .infinity)
                     .background(.black.opacity(0.1))
             }
@@ -119,13 +119,13 @@ struct SpeedControlView: View {
                 model.timerDuration += 0.2
             } label: {
                 Text("+")
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 14)
                     .frame(maxHeight: .infinity)
                     .background(.black.opacity(0.1))
             }
         }
         .foregroundColor(.white)
         .background(.gray)
-        .cornerRadius(16)
+        .cornerRadius(12)
     }
 }

@@ -23,7 +23,7 @@ struct SoundboardView: View {
                         model: model,
                         columnIndex: columnIndex
                     )
-                    .padding(.bottom, 20)
+                    .padding(.bottom, 12)
                     
                     let isEvenColumn = columnIndex % 2 == 0
                     
@@ -37,7 +37,7 @@ struct SoundboardView: View {
                 }
                 .background {
                     if model.currentColumnIndex == columnIndex {
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: 12)
                             .fill(Color.green.opacity(0.3))
                             
                             .padding(-10)
@@ -45,8 +45,8 @@ struct SoundboardView: View {
                 }
                 .overlay {
                     if model.currentColumnIndex == columnIndex {
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.green, lineWidth: 10)
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.green, lineWidth: 5)
                             .padding(-10)
                     }
                 }
@@ -56,7 +56,7 @@ struct SoundboardView: View {
         .padding(20)
         .background(alignment: .top) {
             Color(hex: 0xAF7C47)
-                .frame(height: 102)
+                .frame(height: 70)
         }
         .background(
             Color(hex: 0x674D3A)
@@ -82,11 +82,11 @@ struct SoundboardSlotView: View {
                             }
                         } label: { pressed in
                             Text("Remove Emote")
-                                .font(.custom("Galpon-Black", size: 24))
+                                .font(.custom("Galpon-Black", size: 22))
                                 .foregroundColor(.white)
                                 .frame(maxWidth: .infinity)
-                                .padding(.horizontal, 24)
-                                .padding(.vertical, 16)
+                                .padding(.horizontal, 20)
+                                .padding(.vertical, 12)
                                 .background(pressed ? Templates.buttonHighlightColor : .clear)
                                 .background(Color.blue)
                                 .cornerRadius(12)
@@ -99,11 +99,12 @@ struct SoundboardSlotView: View {
                         .overlay {
                             image(selectedEmote: selectedEmote)
                         }
-                        .cornerRadius(16)
+                        .cornerRadius(12)
                 }
 
             } else {
                 button
+                    .cornerRadius(12)
             }
         }
         .onChange(of: model.selectedEmote) { emote in
@@ -148,7 +149,6 @@ struct SoundboardSlotView: View {
                     Color.green.opacity(0.5)
                 }
             }
-            .cornerRadius(16)
         }
     }
     
@@ -172,16 +172,24 @@ struct SoundboardColumnHeader: View {
     
     var body: some View {
         Button {
-            model.currentColumnIndex = columnIndex
-            model.playCurrentColumn()
+            if
+                let currentColumnIndex = model.currentColumnIndex,
+                currentColumnIndex == columnIndex
+            {
+                model.currentColumnIndex = nil /// remove highlight when selecting an already-active column
+            } else {
+                model.currentColumnIndex = columnIndex
+                model.playCurrentColumn()
+            }
+            
         } label: {
             Text("\(columnIndex + 1)")
-                .font(.custom("Galpon-Black", size: 36))
+                .font(.custom("Galpon-Black", size: 24))
                 .padding(.horizontal, 16)
-                .padding(.vertical, 12)
+                .padding(.vertical, 4)
                 .frame(maxWidth: .infinity)
                 .background(.white)
-                .cornerRadius(16)
+                .cornerRadius(12)
                 .foregroundColor(.black)
         }
     }

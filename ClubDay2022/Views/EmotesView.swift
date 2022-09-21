@@ -54,7 +54,7 @@ struct EmotesView: View {
                     }
                 }
             }
-            .padding(24)
+            .padding(16)
         }
         .background(
             Color(hex: 0xEEEEEE)

@@ -61,7 +61,6 @@ struct SoundboardView: View {
         .background(
             Color(hex: 0x674D3A)
         )
-        .cornerRadius(24)
     }
 }
 

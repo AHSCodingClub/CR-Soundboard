@@ -10,85 +10,89 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var model = ViewModel()
+    @State var showingAbout = false
     
     var body: some View {
-        GeometryReader { geometry in
-            
-            /// iPad portrait width: 1024
-            /// /// iPad landscape width: 1366
-            content(isVertical: geometry.size.width < 1100)
-        }
-    }
-    
-    func content(isVertical: Bool) -> some View {
-        VStack {
-            VStack(alignment: .leading, spacing: 0) {
-                HStack(spacing: 14) {
-                    let layout = isVertical
-                        ? AnyLayout(_VStackLayout(alignment: .leading, spacing: 0))
-                        : AnyLayout(_HStackLayout(spacing: 14))
-                    
-                    layout {
-                        Text("CL4SH ROY4L3")
-                            .foregroundColor(.white)
-                            
-                        Button {
-                            model.currentColumnIndex = nil
-                        } label: {
-                            Text("SOUNDBOARD")
-                                .foregroundColor(Color(hex: 0xF7AD18))
-                        }
-                    }
-                    .font(.custom("Galpon-Black", size: 56))
-                    .padding(.top, 2)
-                    .padding(.bottom, 4)
-                    
-                    Spacer()
-                    
-                    SpeedControlView(model: model)
-                    
-                    Button {
-                        withAnimation {
-                            model.isOn.toggle()
-                        }
-                        
-                        if model.isOn {
-                            model.start()
-                        } else {
-                            model.stop()
-                        }
-                        
-                    } label: {
-                        Text(model.isOn ? "ON" : "OFF")
-                            .foregroundColor(.white)
-                            .font(.custom("Galpon-Black", size: 56))
-                            .padding(.horizontal, 20)
-                            .background(model.isOn ? Color.green : Color.gray)
-                            .cornerRadius(16)
-                    }
-                }
-                .padding(.top, 4)
-                
+        VStack(alignment: .leading, spacing: 8) {
+            header
+                .cornerRadius(16)
+        
+            HStack {
                 SoundboardView(model: model)
-                    .padding(.top, 8)
+                    .cornerRadius(16)
+                    
+                EmotesView(model: model)
+                    .cornerRadius(16)
+                    .frame(maxWidth: 300)
             }
-            .padding(.top, 8)
-            .padding(.horizontal, 24)
-            .padding(.bottom, 24)
-            .background(
-                Color(hex: 0x0060C2)
-            )
-            .cornerRadius(24)
-            .padding(.horizontal, 24)
-            
-            EmotesView(model: model)
-                .padding(.top, -36) /// allow slight overlap
+            .cornerRadius(16)
         }
-        .padding(.top, 24)
+        .padding(.top, 12)
         .background(
             Color(hex: 0x9B0000)
+                .ignoresSafeArea()
         )
-        .ignoresSafeArea()
+        .sheet(isPresented: $showingAbout) {
+            AboutView()
+        }
+    }
+
+    var header: some View {
+        HStack(spacing: 14) {
+            Button {
+                showingAbout = true
+            } label: {
+                Image(systemName: "info")
+                    .background(Color.blue)
+                    .cornerRadius(16)
+            }
+            
+            HStack(spacing: 8) {
+                Text("CL4SH ROY4L3")
+                    .foregroundColor(.white)
+                    
+                Button {
+                    model.currentColumnIndex = nil
+                } label: {
+                    Text("SOUNDBOARD")
+                        .foregroundColor(Color(hex: 0xF7AD18))
+                }
+            }
+            
+            .padding(.top, 2)
+            .padding(.bottom, 4)
+            
+            Spacer()
+            
+            SpeedControlView(model: model)
+            
+            Button {
+                withAnimation {
+                    model.isOn.toggle()
+                }
+                
+                if model.isOn {
+                    model.start()
+                } else {
+                    model.stop()
+                }
+                
+            } label: {
+                Text(model.isOn ? "ON" : "OFF")
+                    .foregroundColor(.white)
+                    .frame(maxHeight: .infinity)
+                    .padding(.horizontal, 20)
+                    .background(model.isOn ? Color.green : Color.gray)
+                    .cornerRadius(16)
+            }
+        }
+        .frame(height: 32)
+        .padding(.vertical, 8)
+        .font(.custom("Galpon-Black", size: 26))
+        .padding(.horizontal, 20)
+        .background(
+            Color(hex: 0x0060C2)
+        )
     }
 }
 
@@ -121,9 +125,7 @@ struct SpeedControlView: View {
             }
         }
         .foregroundColor(.white)
-        .font(.custom("Galpon-Black", size: 56))
         .background(.gray)
         .cornerRadius(16)
-        .fixedSize(horizontal: false, vertical: true)
     }
 }

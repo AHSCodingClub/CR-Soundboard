@@ -12,7 +12,7 @@ struct EmotesView: View {
     @ObservedObject var model: ViewModel
 
     let columns = [
-        GridItem(.adaptive(minimum: 100))
+        GridItem(.adaptive(minimum: 40))
     ]
 
     var body: some View {
@@ -56,16 +56,8 @@ struct EmotesView: View {
             }
             .padding(24)
         }
-        .frame(maxHeight: 400)
         .background(
             Color(hex: 0xEEEEEE)
-        )
-        .cornerRadius(24, corners: [.topLeft, .topRight])
-        .shadow(
-            color: .black.opacity(0.75),
-            radius: 32,
-            x: 0,
-            y: 3
         )
     }
 }

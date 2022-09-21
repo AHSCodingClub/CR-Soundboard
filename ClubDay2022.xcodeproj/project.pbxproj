@@ -103,6 +103,7 @@
 		3C30163728C1A5A20061A670 /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30163628C1A5A20061A670 /* Column.swift */; };
 		3C30163928C1A5AF0061A670 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30163828C1A5AF0061A670 /* Slot.swift */; };
 		3C30163C28C1B7730061A670 /* Popovers in Frameworks */ = {isa = PBXBuildFile; productRef = 3C30163B28C1B7730061A670 /* Popovers */; };
+		3CB8FAB628DADC5300C6008D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8FAB528DADC5300C6008D /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +205,7 @@
 		3C30163628C1A5A20061A670 /* Column.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
 		3C30163828C1A5AF0061A670 /* Slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
 		3C30163D28C1B7830061A670 /* Popovers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Popovers; path = ../../../../Code/Popovers; sourceTree = "<group>"; };
+		3CB8FAB528DADC5300C6008D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +364,7 @@
 				3C30161528C19FBE0061A670 /* ContentView.swift */,
 				3C30163428C1A57B0061A670 /* SoundboardView.swift */,
 				3C30162A28C1A1AA0061A670 /* EmotesView.swift */,
+				3CB8FAB528DADC5300C6008D /* AboutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				3C30163728C1A5A20061A670 /* Column.swift in Sources */,
 				3C30162D28C1A1EC0061A670 /* Utilities.swift in Sources */,
 				3C30163328C1A3290061A670 /* AudioPlayer.swift in Sources */,
+				3CB8FAB628DADC5300C6008D /* AboutView.swift in Sources */,
 				3C30161628C19FBE0061A670 /* ContentView.swift in Sources */,
 				3C30162428C1A0D10061A670 /* Shared.swift in Sources */,
 				3C30161428C19FBE0061A670 /* ClubDay2022App.swift in Sources */,

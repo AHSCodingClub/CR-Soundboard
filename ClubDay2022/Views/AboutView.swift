@@ -27,10 +27,11 @@ struct AboutView: View {
         "Michael W.",
         "Luigi M.",
         "Ariston S.",
+        "Ben T.",
     ]
     
     let columns = [
-        GridItem(.adaptive(minimum: 140))
+        GridItem(.adaptive(minimum: 100))
     ]
     
     var body: some View {

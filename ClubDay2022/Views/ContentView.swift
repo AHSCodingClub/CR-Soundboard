@@ -17,7 +17,7 @@ struct ContentView: View {
             header
                 .cornerRadius(16)
         
-            HStack {
+            HStack(spacing: 8) {
                 SoundboardView(model: model)
                     .cornerRadius(16)
                     
@@ -28,6 +28,7 @@ struct ContentView: View {
             .cornerRadius(16)
         }
         .padding(.top, 12)
+        .padding(.horizontal, 20)
         .background(
             Color(hex: 0x9B0000)
                 .ignoresSafeArea()
@@ -86,9 +87,9 @@ struct ContentView: View {
                     .cornerRadius(12)
             }
         }
-        .frame(height: 36)
-        .padding(.vertical, 8)
         .font(.custom("Galpon-Black", size: 28))
+        .frame(height: 36)
+        .padding(.vertical, 10)
         .padding(.horizontal, 20)
         .background(
             Color(hex: 0x0060C2)

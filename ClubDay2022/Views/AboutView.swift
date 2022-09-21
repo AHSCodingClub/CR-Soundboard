@@ -24,10 +24,12 @@ struct AboutView: View {
         "Ryan M.",
         "Tyler G.",
         "Riley B.",
+        "Riley K.",
         "Michael W.",
         "Luigi M.",
         "Ariston S.",
         "Ben T.",
+        "Tyler T.",
     ]
     
     let columns = [
@@ -117,7 +119,6 @@ struct AboutView: View {
             }
         }
         .foregroundColor(.white)
-        
         .background(
             Color(hex: 0x0060C2)
                 .ignoresSafeArea()

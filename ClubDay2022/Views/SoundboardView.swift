@@ -102,9 +102,35 @@ struct SoundboardSlotView: View {
                         .cornerRadius(12)
                 }
 
-            } else {
-                button
+            } else if let emote = model.selectedEmote {
+                button(selectedEmote: emote)
                     .cornerRadius(12)
+            } else {
+                Templates.Menu {
+                    VStack {
+                        Templates.MenuItem {
+                            withAnimation {
+                                slot.selectedEmote = nil
+                            }
+                        } label: { pressed in
+                            Text("Select an emote on the right first!")
+                                .multilineTextAlignment(.center)
+                                .font(.custom("Galpon-Black", size: 22))
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .padding(.horizontal, 20)
+                                .padding(.vertical, 12)
+                                .background(pressed ? Templates.buttonHighlightColor : .clear)
+                                .background(Color.blue)
+                                .cornerRadius(12)
+                        }
+                    }
+                    .padding(16)
+                    .background(UIColor.systemBlue.toColor(.black, percentage: 0.1).color)
+                } label: { fade in
+                    base
+                        .cornerRadius(12)
+                }
             }
         }
         .onChange(of: model.selectedEmote) { emote in
@@ -128,14 +154,13 @@ struct SoundboardSlotView: View {
         }
     }
     
-    var button: some View {
+    func button(selectedEmote: Emote) -> some View {
         Button {
-            if let emote = model.selectedEmote {
-                withAnimation {
-                    slot.selectedEmote = emote
-                }
-                model.selectedEmote = nil
+            withAnimation {
+                slot.selectedEmote = selectedEmote
             }
+            model.selectedEmote = nil
+            
         } label: {
             VStack {
                 if slot.selectedEmote != nil {

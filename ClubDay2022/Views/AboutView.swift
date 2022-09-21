@@ -65,13 +65,13 @@ struct AboutView: View {
                         description: "Just an emote soundboard. Tap an emote on the right, then select a slot to drop it."
                     )
                     
-                    VStack(alignment: .leading, spacing: 16) {
+                    VStack(alignment: .leading, spacing: 20) {
                         AboutSectionView(
                             title: "Made By",
                             description: "AHS Coding Club, Fall 2022 Project"
                         )
                         
-                        HStack(alignment: .top, spacing: 24) {
+                        HStack(alignment: .top, spacing: 48) {
                             VStack(alignment: .leading, spacing: 6) {
                                 Text("Club Officers")
                                     .font(.custom("Galpon-Black", size: 24))

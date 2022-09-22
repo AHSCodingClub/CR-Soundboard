@@ -35,8 +35,16 @@ struct AboutView: View {
         "Michael W.",
         "Luigi M.",
         "Ariston S.",
+        "Ben R.",
         "Ben T.",
         "Tyler T.",
+        "Saylen C.",
+        "Liam S.",
+        "Marco G.",
+        "Blake C.",
+        "Nick M.",
+        "Ryan F.",
+        "Aidan L.",
     ]
     
     let columns = [
@@ -89,8 +97,8 @@ struct AboutView: View {
                                 VStack(alignment: .leading) {
                                     ForEach(officers, id: \.0) { officer in
                                         Text(officer.position)
-                                        + Text(": ")
-                                        + Text(officer.name)
+                                            + Text(": ")
+                                            + Text(officer.name)
                                             .foregroundColor(.white)
                                     }
                                 }

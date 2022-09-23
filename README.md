@@ -1,6 +1,7 @@
 # ClubDay2022-Fall
 
 Coding Club demo app for Club Day Fall 2022
+Cocomelon is cool
 
 It's a Clash Royale soundboard, made with 100% SwiftUI
 

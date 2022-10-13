@@ -92,7 +92,6 @@
 		3C30161428C19FBE0061A670 /* ClubDay2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30161328C19FBE0061A670 /* ClubDay2022App.swift */; };
 		3C30161628C19FBE0061A670 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30161528C19FBE0061A670 /* ContentView.swift */; };
 		3C30161828C19FBF0061A670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C30161728C19FBF0061A670 /* Assets.xcassets */; };
-		3C30161B28C19FBF0061A670 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C30161A28C19FBF0061A670 /* Preview Assets.xcassets */; };
 		3C30162228C1A0AC0061A670 /* Emote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30162128C1A0AB0061A670 /* Emote.swift */; };
 		3C30162428C1A0D10061A670 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30162328C1A0D10061A670 /* Shared.swift */; };
 		3C30162B28C1A1AA0061A670 /* EmotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30162A28C1A1AA0061A670 /* EmotesView.swift */; };
@@ -103,6 +102,7 @@
 		3C30163728C1A5A20061A670 /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30163628C1A5A20061A670 /* Column.swift */; };
 		3C30163928C1A5AF0061A670 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30163828C1A5AF0061A670 /* Slot.swift */; };
 		3C30163C28C1B7730061A670 /* Popovers in Frameworks */ = {isa = PBXBuildFile; productRef = 3C30163B28C1B7730061A670 /* Popovers */; };
+		3C72DB5828F87FF000B4E1A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C72DB5728F87FF000B4E1A9 /* LaunchScreen.storyboard */; };
 		3CB8FAB628DADC5300C6008D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8FAB528DADC5300C6008D /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
@@ -194,7 +194,6 @@
 		3C30161328C19FBE0061A670 /* ClubDay2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDay2022App.swift; sourceTree = "<group>"; };
 		3C30161528C19FBE0061A670 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C30161728C19FBF0061A670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3C30161A28C19FBF0061A670 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C30162128C1A0AB0061A670 /* Emote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emote.swift; sourceTree = "<group>"; };
 		3C30162328C1A0D10061A670 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		3C30162A28C1A1AA0061A670 /* EmotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotesView.swift; sourceTree = "<group>"; };
@@ -205,6 +204,7 @@
 		3C30163628C1A5A20061A670 /* Column.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
 		3C30163828C1A5AF0061A670 /* Slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
 		3C30163D28C1B7830061A670 /* Popovers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Popovers; path = ../../../../Code/Popovers; sourceTree = "<group>"; };
+		3C72DB5728F87FF000B4E1A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CB8FAB528DADC5300C6008D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -257,17 +257,9 @@
 				3C0C89DA28C1B94700FEE351 /* Resources */,
 				3C30162528C1A1720061A670 /* Audio */,
 				3C30161728C19FBF0061A670 /* Assets.xcassets */,
-				3C30161928C19FBF0061A670 /* Preview Content */,
+				3C72DB5728F87FF000B4E1A9 /* LaunchScreen.storyboard */,
 			);
 			path = ClubDay2022;
-			sourceTree = "<group>";
-		};
-		3C30161928C19FBF0061A670 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3C30161A28C19FBF0061A670 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		3C30162528C1A1720061A670 /* Audio */ = {
@@ -503,6 +495,7 @@
 				3C0C8A6E28C1C10D00FEE351 /* Goblin Kissing Emote.m4a in Resources */,
 				3C0C8A7A28C1C10D00FEE351 /* Wizard Dap Emote.m4a in Resources */,
 				3C0C8A3B28C1C10D00FEE351 /* Giant Eating Meat Emote.m4a in Resources */,
+				3C72DB5828F87FF000B4E1A9 /* LaunchScreen.storyboard in Resources */,
 				3C0C8A5828C1C10D00FEE351 /* Electro Wizard Bulb Emote.m4a in Resources */,
 				3C0C8A7228C1C10D00FEE351 /* Princess Thumbs Up Emote.m4a in Resources */,
 				3C0C8A6728C1C10D00FEE351 /* Goblin Hands on Face Emote.m4a in Resources */,
@@ -520,7 +513,6 @@
 				3C0C8A3128C1C10D00FEE351 /* Magic Archer Emote.m4a in Resources */,
 				3C0C8A4428C1C10D00FEE351 /* Skeleton Heart Emote.m4a in Resources */,
 				3C0C8A5328C1C10D00FEE351 /* Laughing Barbarian Emote.m4a in Resources */,
-				3C30161B28C19FBF0061A670 /* Preview Assets.xcassets in Resources */,
 				3C0C8A3028C1C10D00FEE351 /* Knight Phew Exclusive Emote.m4a in Resources */,
 				3C0C8A4828C1C10D00FEE351 /* Giant thumbs Up Emote.m4a in Resources */,
 				3C0C8A7828C1C10D00FEE351 /* Pig Screaming Emote.m4a in Resources */,
@@ -678,14 +670,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ClubDay2022/Preview Content\"";
 				DEVELOPMENT_TEAM = ADNA9MACRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClubDay2022/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "CR Soundboard";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -709,14 +702,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ClubDay2022/Preview Content\"";
 				DEVELOPMENT_TEAM = ADNA9MACRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClubDay2022/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "CR Soundboard";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

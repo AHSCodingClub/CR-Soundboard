@@ -131,6 +131,10 @@ struct AboutView: View {
                         description: "This is our first app! We made it to learn the Swift programming language. It's open source, so feel free to add whatever you want: [github.com/AHSCodingClub/ClubDay2022-Fall](https://github.com/AHSCodingClub/ClubDay2022-Fall)."
                     )
                     
+                    Text("[Privacy Policy](http://getfind.app/cr/privacypolicy)")
+                        .font(.custom("Galpon-Black", size: 32))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    
                     Text("Thank you for everything Natalie. We'll always remember you 💚")
                         .font(.caption)
                 }

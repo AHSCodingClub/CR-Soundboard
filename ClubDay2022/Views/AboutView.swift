@@ -15,7 +15,8 @@ struct AboutView: View {
         ("President", "Andrew Zheng"),
         ("VP", "Krishna Ram"),
         ("Secretary", "H. Kamran"),
-        ("Treasurer", "Isaac Wang")
+        ("Treasurer", "Isaac Wang"),
+        ("Advisor", "Daniel Appel")
     ]
     
     var members: [String] = [

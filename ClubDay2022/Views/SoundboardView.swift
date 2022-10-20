@@ -5,28 +5,28 @@
 //  Created by A. Zheng (github.com/aheze) on 9/1/22.
 //  Copyright © 2022 A. Zheng. All rights reserved.
 //
-    
+
 import Popovers
 import SwiftUI
 
 struct SoundboardView: View {
     @ObservedObject var model: ViewModel
-    
+
     var body: some View {
         HStack {
             ForEach($model.columns) { $column in
 
                 let columnIndex = model.columns.firstIndex(where: { $0.id == column.id }) ?? 0
-                
+
                 VStack {
                     SoundboardColumnHeader(
                         model: model,
                         columnIndex: columnIndex
                     )
                     .padding(.bottom, 12)
-                    
+
                     let isEvenColumn = columnIndex % 2 == 0
-                    
+
                     ForEach($column.slots) { $slot in
                         SoundboardSlotView(
                             model: model,
@@ -39,7 +39,7 @@ struct SoundboardView: View {
                     if model.currentColumnIndex == columnIndex {
                         RoundedRectangle(cornerRadius: 12)
                             .fill(Color.green.opacity(0.3))
-                            
+
                             .padding(-10)
                     }
                 }
@@ -68,9 +68,9 @@ struct SoundboardSlotView: View {
     @ObservedObject var model: ViewModel
     var isEvenColumn: Bool
     @Binding var slot: Slot
-    
+
     @State var pulseAnimationOn = false
-    
+
     var body: some View {
         VStack {
             if let selectedEmote = slot.selectedEmote {
@@ -143,7 +143,7 @@ struct SoundboardSlotView: View {
             }
         }
     }
-    
+
     var base: some View {
         VStack {
             if isEvenColumn {
@@ -153,14 +153,14 @@ struct SoundboardSlotView: View {
             }
         }
     }
-    
+
     func button(selectedEmote: Emote) -> some View {
         Button {
             withAnimation {
                 slot.selectedEmote = selectedEmote
             }
             model.selectedEmote = nil
-            
+
         } label: {
             VStack {
                 if slot.selectedEmote != nil {
@@ -176,7 +176,7 @@ struct SoundboardSlotView: View {
             }
         }
     }
-    
+
     func image(selectedEmote: Emote) -> some View {
         Image(selectedEmote.name)
             .resizable()
@@ -194,22 +194,22 @@ struct SoundboardSlotView: View {
 struct SoundboardColumnHeader: View {
     @ObservedObject var model: ViewModel
     var columnIndex: Int
-    
+
     var body: some View {
         Button {
-            if
-                let currentColumnIndex = model.currentColumnIndex,
+            if let currentColumnIndex = model.currentColumnIndex,
                 currentColumnIndex == columnIndex
             {
-                model.currentColumnIndex = nil /// remove highlight when selecting an already-active column
+                model.currentColumnIndex = nil
+                /// remove highlight when selecting an already-active column
             } else {
                 model.currentColumnIndex = columnIndex
                 model.playCurrentColumn()
             }
-            
+
         } label: {
             Text("\(columnIndex + 1)")
-                .font(.custom("Galpon-Black", size: 24))
+                .font(.custom("Galpon-Black", size: 24, relativeTo: .title2))
                 .padding(.horizontal, 16)
                 .padding(.vertical, 4)
                 .frame(maxWidth: .infinity)

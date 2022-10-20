@@ -22,11 +22,12 @@ class ViewModel: ObservableObject {
 
     init() {
         let height = UIScreen.main.bounds.height
-        let numberOfRows = Int(height) / 80 /// 80 is the approximate height of a row
+        let numberOfRows = Int(height) / 80 // 80 is the approximate height of a row
         let slots = (0 ..< numberOfRows).map { _ in Slot() }
         let columns = (0 ..< 8).map { _ in
             Column(slots: slots)
         }
+        
         self.columns = columns
 
         $timerDuration.sink { [weak self] timerDuration in
@@ -62,10 +63,12 @@ class ViewModel: ObservableObject {
             if newColumnIndex >= numberOfColumns {
                 newColumnIndex = 0
             }
+
             self.currentColumnIndex = newColumnIndex
         } else {
             currentColumnIndex = 0
         }
+
         playCurrentColumn()
     }
 

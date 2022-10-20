@@ -4,7 +4,7 @@
 
 ## Images to Find
 
-**Note:** Images in here may already be downloaded, but under a different name. If they are, please list the filename of the image (the folder under `Assets.xcassets`) (in parentheses and a code block, e.g. ```Emote Name (`WhateverTheImageNameIs`)```).
+**Note:** Images in here may already be downloaded, but under a different name. If they are, please list the filename of the image (the folder under `Assets.xcassets`) in parentheses and a code block, e.g. ```Emote Name (`WhateverTheImageNameIs`)```.
 
 - Angry Goblin
 - Goblin Kissing

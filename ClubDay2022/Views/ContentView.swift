@@ -11,16 +11,16 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var model = ViewModel()
     @State var showingAbout = false
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             header
                 .cornerRadius(16)
-        
+
             HStack(spacing: 8) {
                 SoundboardView(model: model)
                     .cornerRadius(16)
-                    
+
                 EmotesView(model: model)
                     .cornerRadius(16)
                     .frame(maxWidth: 300)
@@ -43,16 +43,16 @@ struct ContentView: View {
             HStack(spacing: 8) {
                 Text("CL4SH ROY4L3")
                     .foregroundColor(.white)
-                    
+
                 Text("SOUNDBOARD")
                     .foregroundColor(Color(hex: 0xF7AD18))
             }
-            
+
             .padding(.top, 2)
             .padding(.bottom, 4)
-            
+
             Spacer()
-            
+
             Button {
                 showingAbout = true
             } label: {
@@ -64,20 +64,20 @@ struct ContentView: View {
                     .background(Color.white.opacity(0.2))
                     .cornerRadius(12)
             }
-            
+
             SpeedControlView(model: model)
-            
+
             Button {
                 withAnimation {
                     model.isOn.toggle()
                 }
-                
+
                 if model.isOn {
                     model.start()
                 } else {
                     model.stop()
                 }
-                
+
             } label: {
                 Text(model.isOn ? "ON" : "OFF")
                     .foregroundColor(.white)
@@ -99,7 +99,7 @@ struct ContentView: View {
 
 struct SpeedControlView: View {
     @ObservedObject var model: ViewModel
-    
+
     var body: some View {
         HStack(spacing: 0) {
             Button {
@@ -112,10 +112,10 @@ struct SpeedControlView: View {
                     .frame(maxHeight: .infinity)
                     .background(.black.opacity(0.1))
             }
-            
+
             Text(String(format: "%.1f", model.timerDuration))
                 .padding(.horizontal, 30)
-            
+
             Button {
                 model.timerDuration += 0.2
             } label: {

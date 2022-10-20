@@ -9,7 +9,7 @@
 import AVFoundation
 import UIKit
 
-/// from https://www.oreilly.com/library/view/ios-swift-game/9781491920794/ch04.html
+// From https://www.oreilly.com/library/view/ios-swift-game/9781491920794/ch04.html
 class AudioPlayer: NSObject {
     // Given the URL of a sound file, either create or reuse an audio player
     class func play(url: URL) {
@@ -18,7 +18,7 @@ class AudioPlayer: NSObject {
             player.isPlaying == false && player.url == url
         }
 
-        // If we found one, return it
+        // If we found one, use it
         if let playerToUse = availablePlayers.first {
             playerToUse.play()
         }

@@ -22,8 +22,7 @@ struct EmotesView: View {
 
                     Button {
                         withAnimation {
-                            if
-                                let selectedEmote = model.selectedEmote,
+                            if let selectedEmote = model.selectedEmote,
                                 selectedEmote == emote
                             {
                                 model.selectedEmote = nil

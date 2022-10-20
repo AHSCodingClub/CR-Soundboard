@@ -79,10 +79,10 @@ struct ContentView: View {
                 }
 
             } label: {
-                Text(model.isOn ? "ON" : "OFF")
+                Image(systemName: model.isOn ? "pause" : "play")
                     .foregroundColor(.white)
+                    .font(.system(size: 24, weight: .bold))
                     .frame(maxHeight: .infinity)
-                    .padding(.horizontal, 14)
                     .background(model.isOn ? Color.green : Color.gray)
                     .cornerRadius(12)
             }

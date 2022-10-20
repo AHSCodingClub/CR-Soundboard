@@ -10,10 +10,10 @@ import AVFoundation
 import SwiftUI
 
 enum Shared {
-    /// An array of all players stored in the pool
+    // An array of all audio players stored in the pool
     static var players: [AVAudioPlayer] = []
 
-    /// All emotes
+    // All emotes
     static let emotes: [Emote] = [
         .init(name: "Laughing_King", audioFileName: "Laughing King Emote"),
         .init(name: "Angry_King", audioFileName: "Angry King Emote"),

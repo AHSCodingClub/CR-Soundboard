@@ -79,7 +79,7 @@ struct ContentView: View {
                 }
 
             } label: {
-                Image(systemName: model.isOn ? "pause" : "play")
+                Image(systemName: model.isOn ? "pause.fill" : "play")
                     .foregroundColor(.white)
                     .font(.system(size: 24, weight: .bold))
                     .frame(maxHeight: .infinity)

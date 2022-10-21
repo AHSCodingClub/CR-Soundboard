@@ -15,7 +15,6 @@ struct SoundboardView: View {
     var body: some View {
         HStack {
             ForEach($model.columns) { $column in
-
                 let columnIndex = model.columns.firstIndex(where: { $0.id == column.id }) ?? 0
 
                 VStack {
@@ -201,7 +200,7 @@ struct SoundboardColumnHeader: View {
                 currentColumnIndex == columnIndex
             {
                 model.currentColumnIndex = nil
-                /// remove highlight when selecting an already-active column
+                // remove highlight when selecting an already-active column
             } else {
                 model.currentColumnIndex = columnIndex
                 model.playCurrentColumn()

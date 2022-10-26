@@ -65,7 +65,7 @@ enum Shared {
         .init(name: "Kiss_Log", audioFileName: "Goblin Victory Emote"), // missing audio
         .init(name: "Kiss_Night_Witch", audioFileName: "Golden Hog Rider Emote"), // missing audio
         .init(name: "Kiss_Princess", audioFileName: "Princess Kissing Emote"),
-        .init(name: "Laugh_Ewiz", audioFileName: "Hog Rider Kissing Emote"), // missing audio
+        .init(name: "Laugh_Ewiz", audioFileName: "Laughing Electro Wizard Emote"), 
         .init(name: "Laughing_Goblin", audioFileName: "Goblin Mean Laugh Emote"),
         .init(name: "Laughing_King", audioFileName: "Laughing King Emote"),
         .init(name: "Lion_Dance_Hoggy", audioFileName: "Hunter Emote"), // missing audio
@@ -76,7 +76,7 @@ enum Shared {
         .init(name: "Muscle_Princess", audioFileName: "Knight Emote"), // missing audio
         .init(name: "Musket_Musketeer", audioFileName: "Musketeer Emote"),
         .init(name: "Mustache_Prince", audioFileName: "Prince Emote"),
-        .init(name: "Night_Witch_Catrina", audioFileName: "Laughing Electro Wizard Emote"), // missing audio
+        .init(name: "Night_Witch_Catrina", audioFileName: "Hog Rider Kissing Emote"), // missing audio
         .init(name: "Painting_Ram_Rider", audioFileName: "Laughing Goblin Emote"), // missing audio
         .init(name: "Pancakes_Mini_PEKKA", audioFileName: "Mini Pekka Pan Cake Emote"),
         .init(name: "Pick_Barbarian", audioFileName: "Barbarian Poking Nose Emote"),

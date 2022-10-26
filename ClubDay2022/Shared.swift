@@ -42,7 +42,7 @@ enum Shared {
         .init(name: "Dab_Wizard", audioFileName: "Wizard Dap Emote"),
         .init(name: "Dacing_Dart_Goblin", audioFileName: "Laughing King Emote"), // missing audio
         .init(name: "Dacing_Giant_Goblin", audioFileName: "Crying Skeleton Emote"), // missing audio
-        .init(name: "Dance_Mini_PEKKA", audioFileName: "Mini Pekka Pan Cake Emote"), // missing audio
+        .init(name: "Dance_Mini_PEKKA", audioFileName: "Pig Screaming Emote"), // missing audio
         .init(name: "Dark_Price_Crying", audioFileName: "E Wizard Getting Current Emote"), // missing audio
         .init(name: "Deal_With_It_Goblin", audioFileName: "Goblin Glasses Emote"),
         .init(name: "Eating_Giant", audioFileName: "Giant Eating Meat Emote"),
@@ -88,7 +88,7 @@ enum Shared {
         .init(name: "ShakingFish", audioFileName: "Pig Eating Noodles Emote"), // missing audio
         .init(name: "Skeleton_Snorkel", audioFileName: "Pig Emote"), // missing audio
         .init(name: "Slowmo_Archer", audioFileName: "Pig Helmet Emote"), // missing audio
-        .init(name: "Spatula_Mini_PEKKA", audioFileName: "Pig Screaming Emote"), // missing audio
+        .init(name: "Spatula_Mini_PEKKA", audioFileName: "Mini Pekka Pan Cake Emote"),
         .init(name: "Surprise_Prince", audioFileName: "Prince Emote"), // missing audio
         .init(name: "Surrender_Goblin", audioFileName: "Goblin White Flag Emote"),
         .init(name: "This_Is_Fine_Goblin", audioFileName: "Goblin Not Caring Emote"),

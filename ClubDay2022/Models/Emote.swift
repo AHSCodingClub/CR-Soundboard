@@ -13,15 +13,16 @@ struct Emote: Identifiable, Equatable {
 
     var name: String
     var audioFileName: String
+    var audioFileExtension: String
 }
 
 extension Emote {
     var url: URL? {
-        if let path = Bundle.main.path(forResource: audioFileName, ofType: "m4a") {
+        if let path = Bundle.main.path(forResource: audioFileName, ofType: audioFileExtension) {
             return URL(fileURLWithPath: path)
         }
         
-        print("Error for \(audioFileName)")
+        print("Error for \(audioFileName).\(audioFileExtension)")
         return nil
     }
 }
